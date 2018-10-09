@@ -7,14 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0B0BBF216C79FC001650F9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
+		9C0B0BC1216C7A11001650F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BC0216C7A11001650F9 /* Foundation.framework */; };
 		9C329D6A216B74FF0016C867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D69216B74FF0016C867 /* AppDelegate.m */; };
 		9C329D6D216B74FF0016C867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D6C216B74FF0016C867 /* ViewController.m */; };
 		9C329D6F216B75000016C867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C329D6E216B75000016C867 /* Assets.xcassets */; };
 		9C329D72216B75000016C867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C329D70216B75000016C867 /* Main.storyboard */; };
 		9C329D75216B75000016C867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D74216B75000016C867 /* main.m */; };
+		9C329D83216B752C0016C867 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
+		9C329D87216B752C0016C867 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D86216B752C0016C867 /* SourceEditorExtension.m */; };
+		9C329D8F216B752C0016C867 /* XPaste.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* XPaste.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C329D96216B76650016C867 /* RTBase64Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D95216B76650016C867 /* RTBase64Command.m */; };
+		9CE0C357216C89CB00548233 /* RTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C356216C89CB00548233 /* RTUtilities.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9C329D8D216B752C0016C867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C329D5D216B74FF0016C867 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C329D7F216B752C0016C867;
+			remoteInfo = XPasteExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C329D93216B752C0016C867 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9C329D8F216B752C0016C867 /* XPaste.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		9C0B0BC0216C7A11001650F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C329D65216B74FF0016C867 /* XPaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C329D68216B74FF0016C867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C329D69216B74FF0016C867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -25,6 +58,16 @@
 		9C329D73216B75000016C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C329D74216B75000016C867 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C329D76216B75000016C867 /* XPaste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPaste.entitlements; sourceTree = "<group>"; };
+		9C329D80216B752C0016C867 /* XPaste.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XPaste.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C329D82216B752C0016C867 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9C329D85216B752C0016C867 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		9C329D86216B752C0016C867 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		9C329D8B216B752C0016C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C329D8C216B752C0016C867 /* XPasteExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPasteExtension.entitlements; sourceTree = "<group>"; };
+		9C329D94216B76650016C867 /* RTBase64Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTBase64Command.h; sourceTree = "<group>"; };
+		9C329D95216B76650016C867 /* RTBase64Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTBase64Command.m; sourceTree = "<group>"; };
+		9CE0C355216C89CB00548233 /* RTUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTUtilities.h; sourceTree = "<group>"; };
+		9CE0C356216C89CB00548233 /* RTUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +78,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C329D7D216B752C0016C867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0B0BC1216C7A11001650F9 /* Foundation.framework in Frameworks */,
+				9C0B0BBF216C79FC001650F9 /* XcodeKit.framework in Frameworks */,
+				9C329D83216B752C0016C867 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				9C329D67216B74FF0016C867 /* XPaste */,
+				9C329D84216B752C0016C867 /* XPasteExtension */,
+				9C329D81216B752C0016C867 /* Frameworks */,
 				9C329D66216B74FF0016C867 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				9C329D65216B74FF0016C867 /* XPaste.app */,
+				9C329D80216B752C0016C867 /* XPaste.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +126,31 @@
 			path = XPaste;
 			sourceTree = "<group>";
 		};
+		9C329D81216B752C0016C867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C0B0BC0216C7A11001650F9 /* Foundation.framework */,
+				9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */,
+				9C329D82216B752C0016C867 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C329D84216B752C0016C867 /* XPasteExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9C329D8B216B752C0016C867 /* Info.plist */,
+				9C329D94216B76650016C867 /* RTBase64Command.h */,
+				9C329D95216B76650016C867 /* RTBase64Command.m */,
+				9C329D85216B752C0016C867 /* SourceEditorExtension.h */,
+				9C329D86216B752C0016C867 /* SourceEditorExtension.m */,
+				9C329D8C216B752C0016C867 /* XPasteExtension.entitlements */,
+				9CE0C355216C89CB00548233 /* RTUtilities.h */,
+				9CE0C356216C89CB00548233 /* RTUtilities.m */,
+			);
+			path = XPasteExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +161,34 @@
 				9C329D61216B74FF0016C867 /* Sources */,
 				9C329D62216B74FF0016C867 /* Frameworks */,
 				9C329D63216B74FF0016C867 /* Resources */,
+				9C329D93216B752C0016C867 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9C329D8E216B752C0016C867 /* PBXTargetDependency */,
 			);
 			name = XPaste;
 			productName = XPaste;
 			productReference = 9C329D65216B74FF0016C867 /* XPaste.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9C329D7F216B752C0016C867 /* XPasteExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C329D90216B752C0016C867 /* Build configuration list for PBXNativeTarget "XPasteExtension" */;
+			buildPhases = (
+				9C329D7C216B752C0016C867 /* Sources */,
+				9C329D7D216B752C0016C867 /* Frameworks */,
+				9C329D7E216B752C0016C867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPasteExtension;
+			productName = XPasteExtension;
+			productReference = 9C329D80216B752C0016C867 /* XPaste.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,10 +196,14 @@
 		9C329D5D216B74FF0016C867 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RT;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = XcoderTips;
 				TargetAttributes = {
 					9C329D64216B74FF0016C867 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9C329D7F216B752C0016C867 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -118,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				9C329D64216B74FF0016C867 /* XPaste */,
+				9C329D7F216B752C0016C867 /* XPasteExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +234,13 @@
 			files = (
 				9C329D6F216B75000016C867 /* Assets.xcassets in Resources */,
 				9C329D72216B75000016C867 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C329D7E216B752C0016C867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +257,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C329D7C216B752C0016C867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C329D87216B752C0016C867 /* SourceEditorExtension.m in Sources */,
+				9C329D96216B76650016C867 /* RTBase64Command.m in Sources */,
+				9CE0C357216C89CB00548233 /* RTUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C329D8E216B752C0016C867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C329D7F216B752C0016C867 /* XPasteExtension */;
+			targetProxy = 9C329D8D216B752C0016C867 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9C329D70216B75000016C867 /* Main.storyboard */ = {
@@ -306,6 +436,52 @@
 			};
 			name = Release;
 		};
+		9C329D91216B752C0016C867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JRKXNW9FRX;
+				INFOPLIST_FILE = XPasteExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XPasteExtension;
+				PRODUCT_NAME = XPaste;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9C329D92216B752C0016C867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JRKXNW9FRX;
+				INFOPLIST_FILE = XPasteExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XPasteExtension;
+				PRODUCT_NAME = XPaste;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +499,15 @@
 			buildConfigurations = (
 				9C329D7A216B75000016C867 /* Debug */,
 				9C329D7B216B75000016C867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C329D90216B752C0016C867 /* Build configuration list for PBXNativeTarget "XPasteExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C329D91216B752C0016C867 /* Debug */,
+				9C329D92216B752C0016C867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
