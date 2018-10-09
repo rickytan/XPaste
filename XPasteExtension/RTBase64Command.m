@@ -9,56 +9,30 @@
 #import <Cocoa/Cocoa.h>
 
 #import "RTBase64Command.h"
-#import "RTUtilities.h"
 
 @implementation RTBase64Command
+
+- (BOOL)isValid
 {
-    XCSourceEditorCommandInvocation         * _invocation;
-    void (^_completionHandler)(NSError *);
+    return super.isValid && [[NSPasteboard generalPasteboard] canReadItemWithDataConformingToTypes:@[(NSString *)kUTTypeImage, NSPasteboardTypeString]];
 }
 
-- (void)_doPaste:(NSData *)data
+- (NSString *)replacementString
 {
-    NSRange range = RTCompleteBufferSelectionRange(_invocation.buffer);
-    if (range.location != NSNotFound) {
-        if (data) {
-            NSString *base64String = [data base64EncodedStringWithOptions:0];
-            _invocation.buffer.completeBuffer = [_invocation.buffer.completeBuffer stringByReplacingCharactersInRange:range
-                                                                                                           withString:base64String];
-            _completionHandler(nil);
-        }
-        else {
-            _completionHandler([NSError errorWithDomain:RTXPasteErrorDomain
-                                                   code:-1
-                                               userInfo:@{NSLocalizedDescriptionKey: @"Data is empty!"}]);
-        }
-    } else {
-        _completionHandler([NSError errorWithDomain:RTXPasteErrorDomain
-                                               code:-1
-                                           userInfo:@{NSLocalizedDescriptionKey: @"Multiple selection range not supported!"}]);
-    }
-}
-
-- (void)performCommandWithInvocation:(XCSourceEditorCommandInvocation *)invocation completionHandler:(void (^)(NSError *))completionHandler
-{
-    _invocation = invocation;
-    _completionHandler = completionHandler;
-    
-    
     if ([[NSPasteboard generalPasteboard] canReadItemWithDataConformingToTypes:@[(NSString *)kUTTypeImage]]) {
         NSData *data = [[NSPasteboard generalPasteboard] dataForType:NSPasteboardTypeTIFF];
         NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:data];
         NSData *pngData = [imageRep representationUsingType:NSPNGFileType
                                                  properties:@{}];
-        [self _doPaste:pngData];
+        if (pngData) {
+            return [pngData base64EncodedStringWithOptions:0];
+        }
     }
     else if ([[NSPasteboard generalPasteboard] canReadItemWithDataConformingToTypes:@[NSPasteboardTypeString]]) {
         NSData *data = [[NSPasteboard generalPasteboard] dataForType:NSPasteboardTypeString];
-        [self _doPaste:data];
+        return [data base64EncodedStringWithOptions:0];
     }
-    else {
-        completionHandler(nil);
-    }
+    return nil;
 }
 
 #pragma mark - Actions

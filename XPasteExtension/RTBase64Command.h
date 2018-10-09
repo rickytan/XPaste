@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <XcodeKit/XcodeKit.h>
+#import "RTBaseCommand.h"
 
-@interface RTBase64Command : NSObject <XCSourceEditorCommand>
+@interface RTBase64Command : RTBaseCommand
 
 @end

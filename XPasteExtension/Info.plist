@@ -36,6 +36,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>As Base64 String</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>RTStringCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).string</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>As String Literal</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>
