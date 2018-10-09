@@ -19,19 +19,31 @@
 
 - (NSString *)replacementString
 {
-    NSMutableString *string = [[[NSPasteboard generalPasteboard] stringForType:NSPasteboardTypeString] mutableCopy];
-    NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:@"[\\u007f-\\uffff]"
-                                                                                options:NSRegularExpressionCaseInsensitive | NSRegularExpressionUseUnicodeWordBoundaries
-                                                                                  error:NULL];
-    NSArray <NSTextCheckingResult *> *matches = [expression matchesInString:string options:0 range:NSMakeRange(0, string.length)];
-    [matches enumerateObjectsWithOptions:NSEnumerationReverse
-                              usingBlock:^(NSTextCheckingResult * obj, NSUInteger idx, BOOL * stop) {
-                                  NSRange range = obj.range;
-                                  unichar ch = [string characterAtIndex:range.location];
-                                  [string replaceCharactersInRange:range
-                                                        withString:[NSString stringWithFormat:@"\\u%04x", ch]];
-                              }];
-    return string.copy;
+    NSString *string = [[NSPasteboard generalPasteboard] stringForType:NSPasteboardTypeString];
+
+    NSMutableString *newString = [NSMutableString stringWithCapacity:string.length];
+
+    uint32 ch = 0;
+    NSRange remainingRange = NSMakeRange(0, string.length);
+    while (remainingRange.length > 0) {
+        [string getBytes:&ch
+               maxLength:sizeof(ch)
+              usedLength:NULL
+                encoding:NSUTF32StringEncoding
+                 options:0
+                   range:NSMakeRange(remainingRange.location, string.length - remainingRange.location)
+          remainingRange:&remainingRange];
+        if (ch > 0x7fff) {
+            [newString appendFormat:@"\\U%08x", ch];
+        }
+        else if (ch > 0x7f) {
+            [newString appendFormat:@"\\u%04x", ch];
+        }
+        else {
+            [newString appendFormat:@"%c", ch];
+        }
+    }
+    return newString.copy;
 }
 
 @end

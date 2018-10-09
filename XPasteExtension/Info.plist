@@ -44,6 +44,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>As String Literal</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>RTUnicodeCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).unicode</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>As Unicode String</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>
