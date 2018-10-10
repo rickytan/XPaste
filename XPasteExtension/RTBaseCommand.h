@@ -15,6 +15,7 @@
 @property (nonatomic, readonly) void (^completionHandler)(NSError *);
 @property (nonatomic, readonly, getter=isValid) BOOL valid;
 @property (nonatomic, readonly) NSRange bufferSelectionRange;
+@property (nonatomic, readonly) NSUserDefaults *userDefaults;
 
 - (void)execute;
 

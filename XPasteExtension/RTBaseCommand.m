@@ -8,7 +8,20 @@
 
 #import "RTBaseCommand.h"
 
+@interface RTBaseCommand ()
+@property (nonatomic, strong) NSUserDefaults *userDefaults;
+@end
+
 @implementation RTBaseCommand
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"cn.rickytan.XPaste.defaults"];
+    }
+    return self;
+}
 
 - (void)performCommandWithInvocation:(XCSourceEditorCommandInvocation *)invocation completionHandler:(void (^)(NSError *))completionHandler
 {

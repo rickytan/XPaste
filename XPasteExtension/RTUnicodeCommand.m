@@ -19,7 +19,7 @@
 
 - (NSString *)replacementString
 {
-    BOOL upperCase = [[NSUserDefaults standardUserDefaults] boolForKey:@"UnicodeUpperCase"];
+    BOOL upperCase = [self.userDefaults boolForKey:@"UnicodeUpperCase"];
     
     NSString *string = [[NSPasteboard generalPasteboard] stringForType:NSPasteboardTypeString];
 

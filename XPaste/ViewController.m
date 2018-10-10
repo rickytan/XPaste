@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (nonatomic, strong) NSUserDefaults *userDefaults;
 @property (weak) IBOutlet NSButton *caseButton;
 
 @end
@@ -19,9 +20,11 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"UnicodeUpperCase": @YES}];
+    self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"cn.rickytan.XPaste.defaults"];
+    [self.userDefaults registerDefaults:@{@"UnicodeUpperCase": @YES}];
+    [self.userDefaults synchronize];
     
-    self.caseButton.state = [[NSUserDefaults standardUserDefaults] boolForKey:@"UnicodeUpperCase"] ? NSControlStateValueOn : NSControlStateValueOff;
+    self.caseButton.state = [self.userDefaults boolForKey:@"UnicodeUpperCase"] ? NSControlStateValueOn : NSControlStateValueOff;
 }
 
 
@@ -32,9 +35,18 @@
 }
 
 - (IBAction)onEnable:(id)sender {
+    NSDictionary *dict = nil;
     NSAppleScript *script = [[NSAppleScript alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"Preference" withExtension:@"scpt"]
-                                                                   error:nil];
-    [script executeAndReturnError:nil];
+                                                                   error:&dict];
+    if (dict) {
+        NSLog(@"%@", dict);
+    }
+    
+    [script executeAndReturnError:&dict];
+    
+    if (dict) {
+        NSLog(@"%@", dict);
+    }
 }
 
 - (IBAction)onHelp:(id)sender {
@@ -42,8 +54,8 @@
 }
 
 - (IBAction)onUnicodeCase:(id)sender {
-    [[NSUserDefaults standardUserDefaults] setBool:((NSButton *)sender).state == NSControlStateValueOn
-                                            forKey:@"UnicodeUpperCase"];
+    [self.userDefaults setBool:((NSButton *)sender).state == NSControlStateValueOn
+                        forKey:@"UnicodeUpperCase"];
 }
 
 @end
