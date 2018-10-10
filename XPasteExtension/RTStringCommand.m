@@ -23,6 +23,10 @@
     [string replaceOccurrencesOfString:@"\\" withString:@"\\\\" options:0 range:NSMakeRange(0, string.length)];
     [string replaceOccurrencesOfString:@"\"" withString:@"\\\"" options:0 range:NSMakeRange(0, string.length)];
     [string replaceOccurrencesOfString:@"\n" withString:@"\\n" options:0 range:NSMakeRange(0, string.length)];
+    [string replaceOccurrencesOfString:@"\t" withString:@"\\t" options:0 range:NSMakeRange(0, string.length)];
+    [string replaceOccurrencesOfString:@"\r" withString:@"\\r" options:0 range:NSMakeRange(0, string.length)];
+    [string replaceOccurrencesOfString:@"\b" withString:@"\\b" options:0 range:NSMakeRange(0, string.length)];
+    [string replaceOccurrencesOfString:@"\f" withString:@"\\f" options:0 range:NSMakeRange(0, string.length)];
     return string.copy;
 }
 

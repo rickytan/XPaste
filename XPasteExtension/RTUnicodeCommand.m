@@ -33,7 +33,7 @@
                  options:0
                    range:NSMakeRange(remainingRange.location, string.length - remainingRange.location)
           remainingRange:&remainingRange];
-        if (ch > 0x7fff) {
+        if (ch > 0xffff) {
             [newString appendFormat:@"\\U%08x", ch];
         }
         else if (ch > 0x7f) {
