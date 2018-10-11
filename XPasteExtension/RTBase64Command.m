@@ -20,12 +20,15 @@
 - (NSString *)replacementString
 {
     if ([[NSPasteboard generalPasteboard] canReadItemWithDataConformingToTypes:@[(NSString *)kUTTypeImage]]) {
-        NSData *data = [[NSPasteboard generalPasteboard] dataForType:NSPasteboardTypeTIFF];
-        NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:data];
-        NSData *pngData = [imageRep representationUsingType:NSPNGFileType
-                                                 properties:@{}];
-        if (pngData) {
-            return [pngData base64EncodedStringWithOptions:0];
+        NSPasteboardType type = [[NSPasteboard generalPasteboard] availableTypeFromArray:@[(NSString *)kUTTypeImage]];
+        if (![type isEqualToString:(NSString *)kUTTypeAppleICNS]) {
+            NSData *data = [[NSPasteboard generalPasteboard] dataForType:NSPasteboardTypeTIFF];
+            NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:data];
+            NSData *pngData = [imageRep representationUsingType:NSPNGFileType
+                                                     properties:@{}];
+            if (pngData) {
+                return [pngData base64EncodedStringWithOptions:0];
+            }
         }
     }
     else if ([[NSPasteboard generalPasteboard] canReadItemWithDataConformingToTypes:@[NSPasteboardTypeString]]) {
