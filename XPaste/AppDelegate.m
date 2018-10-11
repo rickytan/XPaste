@@ -18,11 +18,8 @@
     // Insert code here to initialize your application
 }
 
-- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
-    if (!flag) {
-        [sender.windows.firstObject makeKeyAndOrderFront:self];
-    }
     return YES;
 }
 
