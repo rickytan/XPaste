@@ -84,7 +84,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="umz-5q-7n6">
+                            <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="umz-5q-7n6">
                                 <rect key="frame" x="18" y="234" width="165" height="18"/>
                                 <buttonCell key="cell" type="check" title="Unicode use uppercase" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qWC-8x-w1a">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -95,13 +95,13 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S2d-hf-nM2">
-                                <rect key="frame" x="208" y="207" width="178" height="47"/>
+                                <rect key="frame" x="259" y="207" width="127" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Ttk-dK-hD2"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Enable Extension" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZkY-cp-eRU">
+                                <buttonCell key="cell" type="push" title="Enable XPaste" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="ZkY-cp-eRU">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="18"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="onEnable:" target="XfG-lQ-9wD" id="J1s-uy-4uY"/>
@@ -117,11 +117,27 @@
                                     <action selector="onHelp:" target="XfG-lQ-9wD" id="cJQ-42-C7A"/>
                                 </connections>
                             </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DXz-bT-HIu">
+                                <rect key="frame" x="20" y="54" width="150" height="161"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="app-icon" id="cTk-Nj-3Ol"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTU-P2-t8s">
+                                <rect key="frame" x="109" y="22" width="182" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" allowsUndo="NO" title="Copyright © xcoder.tips 2018" id="fIx-TT-loP">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="CTU-P2-t8s" firstAttribute="centerY" secondItem="UBq-xz-LEK" secondAttribute="centerY" id="4AE-P4-kgm"/>
                             <constraint firstAttribute="trailing" secondItem="UBq-xz-LEK" secondAttribute="trailing" constant="20" id="7vC-xc-2C0"/>
                             <constraint firstAttribute="trailing" secondItem="S2d-hf-nM2" secondAttribute="trailing" constant="20" id="BqQ-uq-zs0"/>
                             <constraint firstItem="umz-5q-7n6" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="GFE-nN-8ob"/>
+                            <constraint firstItem="DXz-bT-HIu" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="LAJ-9V-vjn"/>
+                            <constraint firstItem="DXz-bT-HIu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="X7h-UF-q0j"/>
+                            <constraint firstItem="CTU-P2-t8s" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="bvs-tq-rFT"/>
                             <constraint firstItem="S2d-hf-nM2" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="nwU-xr-tx4"/>
                             <constraint firstItem="umz-5q-7n6" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="xDN-QQ-zor"/>
                             <constraint firstAttribute="bottom" secondItem="UBq-xz-LEK" secondAttribute="bottom" constant="20" id="xyh-h8-qfl"/>
@@ -136,4 +152,7 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="app-icon" width="150" height="161"/>
+    </resources>
 </document>
