@@ -1,8 +1,8 @@
 # XPaste
 This is a Xcode Source Extension to power up your text paste abilities.
 
-## Usage
-* Paste as base64 string. You can also paste a image data as Base64 string, make sure it has been copied to your pasteboard.
+## Features
+- [x] Paste as base64 string. You can also paste a image data as Base64 string, make sure it has been copied to your pasteboard.
   ```text
   A short text.中文。
   ```
@@ -10,7 +10,7 @@ This is a Xcode Source Extension to power up your text paste abilities.
   NSString *text = @"QSBzaG9ydCB0ZXh0LuS4reaWh+OAgg==";
   ```
   ![base64-string](https://user-images.githubusercontent.com/1250207/46783725-f1f7c680-cd5d-11e8-917e-994f9b36518a.gif)
-* Paste as string literal
+- [x] Paste as string literal
   ```html
   <div class="card" style="width: 18rem;">
     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
@@ -25,7 +25,7 @@ This is a Xcode Source Extension to power up your text paste abilities.
   NSString *htmlString = @"<div class=\"card\" style=\"width: 18rem;\">\n  <img class=\"card-img-top\" src=\".../100px180/\" alt=\"Card image cap\">\n  <div class=\"card-body\">\n    <h5 class=\"card-title\">Card title</h5>\n    <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n    <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n  </div>\n</div>";
   ```
   ![string-literal](https://user-images.githubusercontent.com/1250207/46783558-4a7a9400-cd5d-11e8-80dc-65c2c12f48b1.gif)
-* Paste as Unicode string
+- [x] Paste as Unicode string
   ```text
   A short text.中文。😂🤣
   ```
