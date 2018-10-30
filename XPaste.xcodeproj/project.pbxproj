@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845BC32383B4F4B8D6524D87 /* libPods-XPaste.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 627B308E895F385C20911A02 /* libPods-XPaste.a */; };
 		9C0B0BBF216C79FC001650F9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9C0B0BC1216C7A11001650F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BC0216C7A11001650F9 /* Foundation.framework */; };
 		9C329D6A216B74FF0016C867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D69216B74FF0016C867 /* AppDelegate.m */; };
@@ -24,6 +25,7 @@
 		9CE0C363216CC27B00548233 /* RTStringCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C362216CC27B00548233 /* RTStringCommand.m */; };
 		9CE0C366216CC99700548233 /* RTUnicodeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C365216CC99700548233 /* RTUnicodeCommand.m */; };
 		9CE0C368216D9D5300548233 /* Preference.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9CE0C367216D9D5300548233 /* Preference.scpt */; };
+		D1AB5BC5263ECCF2D5FC56A6 /* libPods-XPasteExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48764265491CC811647D063C /* libPods-XPasteExtension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B9252680C34969B24418D0F /* Pods-XPaste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPaste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPaste/Pods-XPaste.debug.xcconfig"; sourceTree = "<group>"; };
+		10459028759C0A4A83AAE112 /* Pods-XPasteExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPasteExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPasteExtension/Pods-XPasteExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		48764265491CC811647D063C /* libPods-XPasteExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPasteExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		627B308E895F385C20911A02 /* libPods-XPaste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPaste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		817645E5962239AA5BEF562A /* Pods-XPaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPaste/Pods-XPaste.release.xcconfig"; sourceTree = "<group>"; };
 		9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		9C0B0BC0216C7A11001650F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C329D65216B74FF0016C867 /* XPaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +89,7 @@
 		9CE0C364216CC99700548233 /* RTUnicodeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTUnicodeCommand.h; sourceTree = "<group>"; };
 		9CE0C365216CC99700548233 /* RTUnicodeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUnicodeCommand.m; sourceTree = "<group>"; };
 		9CE0C367216D9D5300548233 /* Preference.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Preference.scpt; sourceTree = "<group>"; };
+		F62C291D6CD890BEB8FD19EF /* Pods-XPasteExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPasteExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPasteExtension/Pods-XPasteExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845BC32383B4F4B8D6524D87 /* libPods-XPaste.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +108,7 @@
 				9C0B0BC1216C7A11001650F9 /* Foundation.framework in Frameworks */,
 				9C0B0BBF216C79FC001650F9 /* XcodeKit.framework in Frameworks */,
 				9C329D83216B752C0016C867 /* Cocoa.framework in Frameworks */,
+				D1AB5BC5263ECCF2D5FC56A6 /* libPods-XPasteExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +122,7 @@
 				9C329D84216B752C0016C867 /* XPasteExtension */,
 				9C329D81216B752C0016C867 /* Frameworks */,
 				9C329D66216B74FF0016C867 /* Products */,
+				B278BDCE276D1CCF31DFFB0B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +158,8 @@
 				9C0B0BC0216C7A11001650F9 /* Foundation.framework */,
 				9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */,
 				9C329D82216B752C0016C867 /* Cocoa.framework */,
+				48764265491CC811647D063C /* libPods-XPasteExtension.a */,
+				627B308E895F385C20911A02 /* libPods-XPaste.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,6 +187,17 @@
 			path = XPasteExtension;
 			sourceTree = "<group>";
 		};
+		B278BDCE276D1CCF31DFFB0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B9252680C34969B24418D0F /* Pods-XPaste.debug.xcconfig */,
+				817645E5962239AA5BEF562A /* Pods-XPaste.release.xcconfig */,
+				10459028759C0A4A83AAE112 /* Pods-XPasteExtension.debug.xcconfig */,
+				F62C291D6CD890BEB8FD19EF /* Pods-XPasteExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C329D79216B75000016C867 /* Build configuration list for PBXNativeTarget "XPaste" */;
 			buildPhases = (
+				E237E20324B72154E3D31A2F /* [CP] Check Pods Manifest.lock */,
 				9C329D61216B74FF0016C867 /* Sources */,
 				9C329D62216B74FF0016C867 /* Frameworks */,
 				9C329D63216B74FF0016C867 /* Resources */,
@@ -200,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C329D90216B752C0016C867 /* Build configuration list for PBXNativeTarget "XPasteExtension" */;
 			buildPhases = (
+				6954D49A2A2ECA031FD65D2E /* [CP] Check Pods Manifest.lock */,
 				9C329D7C216B752C0016C867 /* Sources */,
 				9C329D7D216B752C0016C867 /* Frameworks */,
 				9C329D7E216B752C0016C867 /* Resources */,
@@ -285,6 +311,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6954D49A2A2ECA031FD65D2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XPasteExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E237E20324B72154E3D31A2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XPaste-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C329D61216B74FF0016C867 /* Sources */ = {
@@ -446,6 +519,7 @@
 		};
 		9C329D7A216B75000016C867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9252680C34969B24418D0F /* Pods-XPaste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
@@ -464,6 +538,7 @@
 		};
 		9C329D7B216B75000016C867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817645E5962239AA5BEF562A /* Pods-XPaste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
@@ -482,6 +557,7 @@
 		};
 		9C329D91216B752C0016C867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10459028759C0A4A83AAE112 /* Pods-XPasteExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +581,7 @@
 		};
 		9C329D92216B752C0016C867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62C291D6CD890BEB8FD19EF /* Pods-XPasteExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
