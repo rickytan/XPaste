@@ -52,6 +52,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>As Unicode String</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>RTUrlEncodedCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).urlencode</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>As Url Encoded String</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>

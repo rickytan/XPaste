@@ -18,6 +18,7 @@
 		9C329D87216B752C0016C867 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D86216B752C0016C867 /* SourceEditorExtension.m */; };
 		9C329D8F216B752C0016C867 /* XPaste.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* XPaste.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9C329D96216B76650016C867 /* RTBase64Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D95216B76650016C867 /* RTBase64Command.m */; };
+		9C7C2D7321885901003B2E4C /* RTUrlEncodedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C2D7221885900003B2E4C /* RTUrlEncodedCommand.m */; };
 		9CE0C357216C89CB00548233 /* RTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C356216C89CB00548233 /* RTUtilities.m */; };
 		9CE0C360216CBCC100548233 /* RTBaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C35F216CBCC100548233 /* RTBaseCommand.m */; };
 		9CE0C363216CC27B00548233 /* RTStringCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C362216CC27B00548233 /* RTStringCommand.m */; };
@@ -70,6 +71,8 @@
 		9C329D8C216B752C0016C867 /* XPasteExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPasteExtension.entitlements; sourceTree = "<group>"; };
 		9C329D94216B76650016C867 /* RTBase64Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTBase64Command.h; sourceTree = "<group>"; };
 		9C329D95216B76650016C867 /* RTBase64Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTBase64Command.m; sourceTree = "<group>"; };
+		9C7C2D7121885900003B2E4C /* RTUrlEncodedCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTUrlEncodedCommand.h; sourceTree = "<group>"; };
+		9C7C2D7221885900003B2E4C /* RTUrlEncodedCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUrlEncodedCommand.m; sourceTree = "<group>"; };
 		9CE0C355216C89CB00548233 /* RTUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTUtilities.h; sourceTree = "<group>"; };
 		9CE0C356216C89CB00548233 /* RTUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUtilities.m; sourceTree = "<group>"; };
 		9CE0C35E216CBCC100548233 /* RTBaseCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTBaseCommand.h; sourceTree = "<group>"; };
@@ -126,14 +129,14 @@
 			children = (
 				9C329D68216B74FF0016C867 /* AppDelegate.h */,
 				9C329D69216B74FF0016C867 /* AppDelegate.m */,
-				9C329D6B216B74FF0016C867 /* ViewController.h */,
-				9C329D6C216B74FF0016C867 /* ViewController.m */,
 				9C329D6E216B75000016C867 /* Assets.xcassets */,
-				9C329D70216B75000016C867 /* Main.storyboard */,
 				9C329D73216B75000016C867 /* Info.plist */,
 				9C329D74216B75000016C867 /* main.m */,
-				9C329D76216B75000016C867 /* XPaste.entitlements */,
+				9C329D70216B75000016C867 /* Main.storyboard */,
 				9CE0C367216D9D5300548233 /* Preference.scpt */,
+				9C329D6B216B74FF0016C867 /* ViewController.h */,
+				9C329D6C216B74FF0016C867 /* ViewController.m */,
+				9C329D76216B75000016C867 /* XPaste.entitlements */,
 			);
 			path = XPaste;
 			sourceTree = "<group>";
@@ -160,6 +163,8 @@
 				9CE0C362216CC27B00548233 /* RTStringCommand.m */,
 				9CE0C364216CC99700548233 /* RTUnicodeCommand.h */,
 				9CE0C365216CC99700548233 /* RTUnicodeCommand.m */,
+				9C7C2D7121885900003B2E4C /* RTUrlEncodedCommand.h */,
+				9C7C2D7221885900003B2E4C /* RTUrlEncodedCommand.m */,
 				9CE0C355216C89CB00548233 /* RTUtilities.h */,
 				9CE0C356216C89CB00548233 /* RTUtilities.m */,
 				9C329D85216B752C0016C867 /* SourceEditorExtension.h */,
@@ -301,6 +306,7 @@
 				9CE0C363216CC27B00548233 /* RTStringCommand.m in Sources */,
 				9CE0C360216CBCC100548233 /* RTBaseCommand.m in Sources */,
 				9CE0C357216C89CB00548233 /* RTUtilities.m in Sources */,
+				9C7C2D7321885901003B2E4C /* RTUrlEncodedCommand.m in Sources */,
 				9CE0C366216CC99700548233 /* RTUnicodeCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
