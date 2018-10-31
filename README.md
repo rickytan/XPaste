@@ -33,10 +33,17 @@ This is a Xcode Source Extension to power up your text paste abilities.
   NSString *unicode = @"A short text.\u4e2d\u6587\u3002\U0001f602\U0001f923";
   ```
   ![unicode-string](https://user-images.githubusercontent.com/1250207/46783817-413df700-cd5e-11e8-9b86-2ad527920089.gif)
+- [x] Paste as Url encoded string
+  ```text
+  http://www.host.com/一段中文路径?key=中文&name=中文#/path/中文
+  ```
+  ```objc
+  NSString *urlString = @"http://www.host.com/%E4%B8%80%E6%AE%B5%E4%B8%AD%E6%96%87%E8%B7%AF%E5%BE%84?key=%E4%B8%AD%E6%96%87&name=%E4%B8%AD%E6%96%87#/path/%E4%B8%AD%E6%96%87";
+  ```
   
 ## Install
 1. Clone this project, build by yourself with Xcode
-2. Or, you can download the binary [here](https://github.com/rickytan/XPaste/releases/download/1.0/XPaste.app.zip)
+2. Or, you can download the binary [here](https://github.com/rickytan/XPaste/releases/download/v1.1/XPaste.app.zip)
 
 Open the **XPaste.app**, you will see following interface, and click **Enable XPaste**, make sure **XPaste Xcode Source Editor** is checked.
 
