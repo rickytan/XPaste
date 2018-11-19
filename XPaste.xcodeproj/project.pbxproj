@@ -10,6 +10,8 @@
 		845BC32383B4F4B8D6524D87 /* libPods-XPaste.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 627B308E895F385C20911A02 /* libPods-XPaste.a */; };
 		9C0B0BBF216C79FC001650F9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9C0B0BC1216C7A11001650F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BC0216C7A11001650F9 /* Foundation.framework */; };
+		9C20DFCE218C7BAC004F9944 /* RTJSONCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C20DFCD218C7BAC004F9944 /* RTJSONCommand.m */; };
+		9C20DFD7218C7E99004F9944 /* RTObjCLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C20DFD6218C7E99004F9944 /* RTObjCLiteral.m */; };
 		9C329D6A216B74FF0016C867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D69216B74FF0016C867 /* AppDelegate.m */; };
 		9C329D6D216B74FF0016C867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D6C216B74FF0016C867 /* ViewController.m */; };
 		9C329D6F216B75000016C867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C329D6E216B75000016C867 /* Assets.xcassets */; };
@@ -60,6 +62,10 @@
 		817645E5962239AA5BEF562A /* Pods-XPaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPaste/Pods-XPaste.release.xcconfig"; sourceTree = "<group>"; };
 		9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		9C0B0BC0216C7A11001650F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C20DFCC218C7BAC004F9944 /* RTJSONCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTJSONCommand.h; sourceTree = "<group>"; };
+		9C20DFCD218C7BAC004F9944 /* RTJSONCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTJSONCommand.m; sourceTree = "<group>"; };
+		9C20DFD2218C7E13004F9944 /* RTObjCLiteral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTObjCLiteral.h; sourceTree = "<group>"; };
+		9C20DFD6218C7E99004F9944 /* RTObjCLiteral.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTObjCLiteral.m; sourceTree = "<group>"; };
 		9C329D65216B74FF0016C867 /* XPaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C329D68216B74FF0016C867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C329D69216B74FF0016C867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -172,6 +178,10 @@
 				9C329D95216B76650016C867 /* RTBase64Command.m */,
 				9CE0C35E216CBCC100548233 /* RTBaseCommand.h */,
 				9CE0C35F216CBCC100548233 /* RTBaseCommand.m */,
+				9C20DFCC218C7BAC004F9944 /* RTJSONCommand.h */,
+				9C20DFCD218C7BAC004F9944 /* RTJSONCommand.m */,
+				9C20DFD2218C7E13004F9944 /* RTObjCLiteral.h */,
+				9C20DFD6218C7E99004F9944 /* RTObjCLiteral.m */,
 				9CE0C361216CC27B00548233 /* RTStringCommand.h */,
 				9CE0C362216CC27B00548233 /* RTStringCommand.m */,
 				9CE0C364216CC99700548233 /* RTUnicodeCommand.h */,
@@ -375,6 +385,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C329D87216B752C0016C867 /* SourceEditorExtension.m in Sources */,
+				9C20DFD7218C7E99004F9944 /* RTObjCLiteral.m in Sources */,
+				9C20DFCE218C7BAC004F9944 /* RTJSONCommand.m in Sources */,
 				9C329D96216B76650016C867 /* RTBase64Command.m in Sources */,
 				9CE0C363216CC27B00548233 /* RTStringCommand.m in Sources */,
 				9CE0C360216CBCC100548233 /* RTBaseCommand.m in Sources */,
@@ -569,10 +581,6 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XPasteExtension;
 				PRODUCT_NAME = XPaste;
 				SKIP_INSTALL = YES;
@@ -592,10 +600,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XPasteExtension;
 				PRODUCT_NAME = XPaste;
