@@ -64,7 +64,7 @@ This is a Xcode Source Extension to power up your text paste abilities.
 ## Install
 
 1. Clone this project, build by yourself with Xcode
-2. Or, you can download the binary [here](https://github.com/rickytan/XPaste/releases/download/v1.1/XPaste.app.zip)
+2. Or, you can download the binary [here](https://github.com/rickytan/XPaste/releases/download/v1.2/XPaste.app.zip)
 
 Open the **XPaste.app**, you will see following interface, and click **Enable XPaste**, make sure **XPaste Xcode Source Editor** is checked.
 
