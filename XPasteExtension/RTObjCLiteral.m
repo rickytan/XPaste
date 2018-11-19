@@ -15,9 +15,9 @@
     return [NSString stringWithFormat:@"@\"%@\"", self.description];
 }
 
-- (NSString *)toLiteralStringWithIndention:(NSInteger)numberOfSpaces
+- (NSString *)toLiteralStringWithIndention:(__unused NSInteger)numberOfSpaces
 {
-    return [[NSString rt_stringWithSpaces:numberOfSpaces] stringByAppendingString:[self toLiteralString]];
+    return [self toLiteralString];
 }
 
 @end
@@ -27,11 +27,6 @@
 + (NSString *)rt_stringWithSpaces:(NSInteger)count
 {
     return [@"" stringByPaddingToLength:count withString:@" " startingAtIndex:0];
-}
-
-- (NSString *)toLiteralStringWithIndention:(NSInteger)numberOfSpaces
-{
-    return [self toLiteralString];
 }
 
 @end
