@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		845BC32383B4F4B8D6524D87 /* libPods-XPaste.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 627B308E895F385C20911A02 /* libPods-XPaste.a */; };
-		9C0B0BBF216C79FC001650F9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9C0B0BC1216C7A11001650F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BC0216C7A11001650F9 /* Foundation.framework */; };
 		9C20DFCE218C7BAC004F9944 /* RTJSONCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C20DFCD218C7BAC004F9944 /* RTJSONCommand.m */; };
 		9C20DFD7218C7E99004F9944 /* RTObjCLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C20DFD6218C7E99004F9944 /* RTObjCLiteral.m */; };
@@ -27,6 +26,8 @@
 		9CE0C363216CC27B00548233 /* RTStringCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C362216CC27B00548233 /* RTStringCommand.m */; };
 		9CE0C366216CC99700548233 /* RTUnicodeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C365216CC99700548233 /* RTUnicodeCommand.m */; };
 		9CE0C368216D9D5300548233 /* Preference.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9CE0C367216D9D5300548233 /* Preference.scpt */; };
+		9CFBE251279ECAF300B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
+		9CFBE252279ECAF300B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1AB5BC5263ECCF2D5FC56A6 /* libPods-XPasteExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48764265491CC811647D063C /* libPods-XPasteExtension.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,17 @@
 				9C329D8F216B752C0016C867 /* XPaste.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFBE253279ECAF300B28881 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9CFBE252279ECAF300B28881 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -112,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0B0BC1216C7A11001650F9 /* Foundation.framework in Frameworks */,
-				9C0B0BBF216C79FC001650F9 /* XcodeKit.framework in Frameworks */,
+				9CFBE251279ECAF300B28881 /* XcodeKit.framework in Frameworks */,
 				9C329D83216B752C0016C867 /* Cocoa.framework in Frameworks */,
 				D1AB5BC5263ECCF2D5FC56A6 /* libPods-XPasteExtension.a in Frameworks */,
 			);
@@ -239,6 +251,7 @@
 				9C329D7C216B752C0016C867 /* Sources */,
 				9C329D7D216B752C0016C867 /* Frameworks */,
 				9C329D7E216B752C0016C867 /* Resources */,
+				9CFBE253279ECAF300B28881 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -537,7 +550,7 @@
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JRKXNW9FRX;
+				DEVELOPMENT_TEAM = 36X754M3QH;
 				INFOPLIST_FILE = XPaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -556,7 +569,7 @@
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JRKXNW9FRX;
+				DEVELOPMENT_TEAM = 36X754M3QH;
 				INFOPLIST_FILE = XPaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,7 +587,7 @@
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JRKXNW9FRX;
+				DEVELOPMENT_TEAM = 36X754M3QH;
 				INFOPLIST_FILE = XPasteExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,7 +607,7 @@
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JRKXNW9FRX;
+				DEVELOPMENT_TEAM = 36X754M3QH;
 				INFOPLIST_FILE = XPasteExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
