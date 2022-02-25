@@ -26,6 +26,12 @@
 		9CE0C363216CC27B00548233 /* RTStringCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C362216CC27B00548233 /* RTStringCommand.m */; };
 		9CE0C366216CC99700548233 /* RTUnicodeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C365216CC99700548233 /* RTUnicodeCommand.m */; };
 		9CE0C368216D9D5300548233 /* Preference.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9CE0C367216D9D5300548233 /* Preference.scpt */; };
+		9CFB591727C8D92F00B28881 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
+		9CFB591C27C8D92F00B28881 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */; };
+		9CFB591F27C8D92F00B28881 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591E27C8D92F00B28881 /* SourceEditorCommand.m */; };
+		9CFB592427C8D92F00B28881 /* XSort.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9CFB591627C8D92F00B28881 /* XSort.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9CFB592827C8DD4100B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
+		9CFB592927C8DD4100B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CFBE251279ECAF300B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9CFBE252279ECAF300B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1AB5BC5263ECCF2D5FC56A6 /* libPods-XPasteExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48764265491CC811647D063C /* libPods-XPasteExtension.a */; };
@@ -39,6 +45,13 @@
 			remoteGlobalIDString = 9C329D7F216B752C0016C867;
 			remoteInfo = XPasteExtension;
 		};
+		9CFB592227C8D92F00B28881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C329D5D216B74FF0016C867 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFB591527C8D92F00B28881;
+			remoteInfo = XSortExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,8 +62,20 @@
 			dstSubfolderSpec = 13;
 			files = (
 				9C329D8F216B752C0016C867 /* XPaste.appex in Embed App Extensions */,
+				9CFB592427C8D92F00B28881 /* XSort.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFB592A27C8DD4100B28881 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9CFB592927C8DD4100B28881 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9CFBE253279ECAF300B28881 /* Embed Frameworks */ = {
@@ -107,6 +132,13 @@
 		9CE0C364216CC99700548233 /* RTUnicodeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTUnicodeCommand.h; sourceTree = "<group>"; };
 		9CE0C365216CC99700548233 /* RTUnicodeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUnicodeCommand.m; sourceTree = "<group>"; };
 		9CE0C367216D9D5300548233 /* Preference.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Preference.scpt; sourceTree = "<group>"; };
+		9CFB591627C8D92F00B28881 /* XSort.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XSort.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFB591A27C8D92F00B28881 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		9CFB591D27C8D92F00B28881 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		9CFB591E27C8D92F00B28881 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		9CFB592027C8D92F00B28881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFB592127C8D92F00B28881 /* XSortExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XSortExtension.entitlements; sourceTree = "<group>"; };
 		F62C291D6CD890BEB8FD19EF /* Pods-XPasteExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPasteExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPasteExtension/Pods-XPasteExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +162,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CFB591327C8D92F00B28881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFB591727C8D92F00B28881 /* Cocoa.framework in Frameworks */,
+				9CFB592827C8DD4100B28881 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -138,6 +179,7 @@
 			children = (
 				9C329D67216B74FF0016C867 /* XPaste */,
 				9C329D84216B752C0016C867 /* XPasteExtension */,
+				9CFB591927C8D92F00B28881 /* XSortExtension */,
 				9C329D81216B752C0016C867 /* Frameworks */,
 				9C329D66216B74FF0016C867 /* Products */,
 				B278BDCE276D1CCF31DFFB0B /* Pods */,
@@ -149,6 +191,7 @@
 			children = (
 				9C329D65216B74FF0016C867 /* XPaste.app */,
 				9C329D80216B752C0016C867 /* XPaste.appex */,
+				9CFB591627C8D92F00B28881 /* XSort.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +252,19 @@
 			path = XPasteExtension;
 			sourceTree = "<group>";
 		};
+		9CFB591927C8D92F00B28881 /* XSortExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9CFB591A27C8D92F00B28881 /* SourceEditorExtension.h */,
+				9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */,
+				9CFB591D27C8D92F00B28881 /* SourceEditorCommand.h */,
+				9CFB591E27C8D92F00B28881 /* SourceEditorCommand.m */,
+				9CFB592027C8D92F00B28881 /* Info.plist */,
+				9CFB592127C8D92F00B28881 /* XSortExtension.entitlements */,
+			);
+			path = XSortExtension;
+			sourceTree = "<group>";
+		};
 		B278BDCE276D1CCF31DFFB0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +293,7 @@
 			);
 			dependencies = (
 				9C329D8E216B752C0016C867 /* PBXTargetDependency */,
+				9CFB592327C8D92F00B28881 /* PBXTargetDependency */,
 			);
 			name = XPaste;
 			productName = XPaste;
@@ -260,6 +317,24 @@
 			name = XPasteExtension;
 			productName = XPasteExtension;
 			productReference = 9C329D80216B752C0016C867 /* XPaste.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		9CFB591527C8D92F00B28881 /* XSortExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CFB592727C8D92F00B28881 /* Build configuration list for PBXNativeTarget "XSortExtension" */;
+			buildPhases = (
+				9CFB591227C8D92F00B28881 /* Sources */,
+				9CFB591327C8D92F00B28881 /* Frameworks */,
+				9CFB591427C8D92F00B28881 /* Resources */,
+				9CFB592A27C8DD4100B28881 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XSortExtension;
+			productName = XSortExtension;
+			productReference = 9CFB591627C8D92F00B28881 /* XSort.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -294,6 +369,9 @@
 							};
 						};
 					};
+					9CFB591527C8D92F00B28881 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 9C329D60216B74FF0016C867 /* Build configuration list for PBXProject "XPaste" */;
@@ -311,6 +389,7 @@
 			targets = (
 				9C329D64216B74FF0016C867 /* XPaste */,
 				9C329D7F216B752C0016C867 /* XPasteExtension */,
+				9CFB591527C8D92F00B28881 /* XSortExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -327,6 +406,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9C329D7E216B752C0016C867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFB591427C8D92F00B28881 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,6 +495,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CFB591227C8D92F00B28881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFB591C27C8D92F00B28881 /* SourceEditorExtension.m in Sources */,
+				9CFB591F27C8D92F00B28881 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -416,6 +511,11 @@
 			isa = PBXTargetDependency;
 			target = 9C329D7F216B752C0016C867 /* XPasteExtension */;
 			targetProxy = 9C329D8D216B752C0016C867 /* PBXContainerItemProxy */;
+		};
+		9CFB592327C8D92F00B28881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFB591527C8D92F00B28881 /* XSortExtension */;
+			targetProxy = 9CFB592227C8D92F00B28881 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,6 +720,54 @@
 			};
 			name = Release;
 		};
+		9CFB592527C8D92F00B28881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = XSortExtension/XSortExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36X754M3QH;
+				INFOPLIST_FILE = XSortExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XSort;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 XcoderTips. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XSortExtension;
+				PRODUCT_NAME = XSort;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CFB592627C8D92F00B28881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = XSortExtension/XSortExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36X754M3QH;
+				INFOPLIST_FILE = XSortExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XSort;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 XcoderTips. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XSortExtension;
+				PRODUCT_NAME = XSort;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -646,6 +794,15 @@
 			buildConfigurations = (
 				9C329D91216B752C0016C867 /* Debug */,
 				9C329D92216B752C0016C867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CFB592727C8D92F00B28881 /* Build configuration list for PBXNativeTarget "XSortExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CFB592527C8D92F00B28881 /* Debug */,
+				9CFB592627C8D92F00B28881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
