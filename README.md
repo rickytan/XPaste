@@ -61,10 +61,33 @@ This is a Xcode Source Extension to power up your text paste abilities.
                 @"name": @"John",
                 @"house": [NSNull null]};
   ```
+  
+- [x] Sort imports, and group them to `<>` and `""`
+  ```objc
+  #import <NELog/NELog.h>
+  #import <NKCoreNetwork/NKCoreNetwork.h>
+  #import "NKWebViewController.h"
+  #import <NKIocProtocols/NKIocProtocols.h>
+  #import "NKWebviewURLProtocol.h"
+  #import "UIBarButtonItem+NKBarButton.h"
+  #import <NEIocProtocols/NEIocProtocols.h>
+  ```
+  
+  ```objc
+  #import <NEIocProtocols/NEIocProtocols.h>
+  #import <NELog/NELog.h>
+  #import <NKCoreNetwork/NKCoreNetwork.h>
+  #import <NKIocProtocols/NKIocProtocols.h>
+
+  #import "NKWebViewController.h"
+  #import "NKWebviewURLProtocol.h"
+  #import "UIBarButtonItem+NKBarButton.h"
+   ```
+
 ## Install
 
 1. Clone this project, build by yourself with Xcode
-2. Or, you can download the binary [here](https://github.com/rickytan/XPaste/releases/download/v1.2/XPaste.app.zip)
+2. Or, you can download the binary [here](https://github.com/rickytan/XPaste/releases/download/v1.3/XPaste.app.zip)
 
 Open the **XPaste.app**, you will see following interface, and click **Enable XPaste**, make sure **XPaste Xcode Source Editor** is checked.
 
