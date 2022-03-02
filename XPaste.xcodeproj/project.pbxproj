@@ -21,6 +21,7 @@
 		9C329D8F216B752C0016C867 /* XPaste.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* XPaste.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9C329D96216B76650016C867 /* RTBase64Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D95216B76650016C867 /* RTBase64Command.m */; };
 		9C7C2D7321885901003B2E4C /* RTUrlEncodedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C2D7221885900003B2E4C /* RTUrlEncodedCommand.m */; };
+		9CAB93AB27CF4283001E7B34 /* RTSortSelectedLinesCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB93AA27CF4283001E7B34 /* RTSortSelectedLinesCommand.m */; };
 		9CE0C357216C89CB00548233 /* RTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C356216C89CB00548233 /* RTUtilities.m */; };
 		9CE0C360216CBCC100548233 /* RTBaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C35F216CBCC100548233 /* RTBaseCommand.m */; };
 		9CE0C363216CC27B00548233 /* RTStringCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C362216CC27B00548233 /* RTStringCommand.m */; };
@@ -28,7 +29,7 @@
 		9CE0C368216D9D5300548233 /* Preference.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9CE0C367216D9D5300548233 /* Preference.scpt */; };
 		9CFB591727C8D92F00B28881 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
 		9CFB591C27C8D92F00B28881 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */; };
-		9CFB591F27C8D92F00B28881 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591E27C8D92F00B28881 /* SourceEditorCommand.m */; };
+		9CFB591F27C8D92F00B28881 /* RTSortImportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591E27C8D92F00B28881 /* RTSortImportCommand.m */; };
 		9CFB592427C8D92F00B28881 /* XSort.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9CFB591627C8D92F00B28881 /* XSort.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9CFB592827C8DD4100B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9CFB592927C8DD4100B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -123,6 +124,8 @@
 		9C329D95216B76650016C867 /* RTBase64Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTBase64Command.m; sourceTree = "<group>"; };
 		9C7C2D7121885900003B2E4C /* RTUrlEncodedCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTUrlEncodedCommand.h; sourceTree = "<group>"; };
 		9C7C2D7221885900003B2E4C /* RTUrlEncodedCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUrlEncodedCommand.m; sourceTree = "<group>"; };
+		9CAB93A927CF4283001E7B34 /* RTSortSelectedLinesCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSortSelectedLinesCommand.h; sourceTree = "<group>"; };
+		9CAB93AA27CF4283001E7B34 /* RTSortSelectedLinesCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSortSelectedLinesCommand.m; sourceTree = "<group>"; };
 		9CE0C355216C89CB00548233 /* RTUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTUtilities.h; sourceTree = "<group>"; };
 		9CE0C356216C89CB00548233 /* RTUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUtilities.m; sourceTree = "<group>"; };
 		9CE0C35E216CBCC100548233 /* RTBaseCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTBaseCommand.h; sourceTree = "<group>"; };
@@ -135,8 +138,8 @@
 		9CFB591627C8D92F00B28881 /* XSort.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XSort.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFB591A27C8D92F00B28881 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
 		9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
-		9CFB591D27C8D92F00B28881 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
-		9CFB591E27C8D92F00B28881 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		9CFB591D27C8D92F00B28881 /* RTSortImportCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSortImportCommand.h; sourceTree = "<group>"; };
+		9CFB591E27C8D92F00B28881 /* RTSortImportCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSortImportCommand.m; sourceTree = "<group>"; };
 		9CFB592027C8D92F00B28881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CFB592127C8D92F00B28881 /* XSortExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XSortExtension.entitlements; sourceTree = "<group>"; };
 		F62C291D6CD890BEB8FD19EF /* Pods-XPasteExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPasteExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPasteExtension/Pods-XPasteExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,10 +260,12 @@
 			children = (
 				9CFB591A27C8D92F00B28881 /* SourceEditorExtension.h */,
 				9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */,
-				9CFB591D27C8D92F00B28881 /* SourceEditorCommand.h */,
-				9CFB591E27C8D92F00B28881 /* SourceEditorCommand.m */,
+				9CFB591D27C8D92F00B28881 /* RTSortImportCommand.h */,
+				9CFB591E27C8D92F00B28881 /* RTSortImportCommand.m */,
 				9CFB592027C8D92F00B28881 /* Info.plist */,
 				9CFB592127C8D92F00B28881 /* XSortExtension.entitlements */,
+				9CAB93A927CF4283001E7B34 /* RTSortSelectedLinesCommand.h */,
+				9CAB93AA27CF4283001E7B34 /* RTSortSelectedLinesCommand.m */,
 			);
 			path = XSortExtension;
 			sourceTree = "<group>";
@@ -500,7 +505,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFB591C27C8D92F00B28881 /* SourceEditorExtension.m in Sources */,
-				9CFB591F27C8D92F00B28881 /* SourceEditorCommand.m in Sources */,
+				9CAB93AB27CF4283001E7B34 /* RTSortSelectedLinesCommand.m in Sources */,
+				9CFB591F27C8D92F00B28881 /* RTSortImportCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

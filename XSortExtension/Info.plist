@@ -10,11 +10,19 @@
 			<array>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>SourceEditorCommand</string>
+					<string>RTSortImportCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
 					<string>$(PRODUCT_BUNDLE_IDENTIFIER).sortimport</string>
 					<key>XCSourceEditorCommandName</key>
 					<string>Import</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>RTSortSelectedLinesCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).sortlines</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Selected Lines</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>

@@ -6,11 +6,11 @@
 //  Copyright © 2022 XcoderTips. All rights reserved.
 //
 
-#import "SourceEditorCommand.h"
+#import "RTSortImportCommand.h"
 
 #define IMPORT_ALLOW_CHAR   "[\\w/.+\\- ]"
 
-@implementation SourceEditorCommand
+@implementation RTSortImportCommand
 
 - (NSString *)normalizedImportLine:(NSString *)line {
     static NSRegularExpression * exp = nil;
