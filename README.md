@@ -102,6 +102,14 @@ Open Preference of Xcode, search **xpaste** in **Key Bindings** tab.
 
 ![image](https://user-images.githubusercontent.com/1250207/46782797-3e410780-cd5a-11e8-84eb-80cd3b28e514.png)
 
+## Steps to make it running
+```bash
+sudo spctl --master-disable
+sudo xattr -rd com.apple.quarantine /Applications/XPaste.app
+xcode-select --install
+codesign --force --deep --sign - /Applications/XPaste.app
+```
+
 ## License
 ```
 MIT License
