@@ -40,6 +40,9 @@
     NSRegularExpression *importPatternBrackets = [NSRegularExpression regularExpressionWithPattern:@"(//)?\\s*#\\s*import\\s*<" IMPORT_ALLOW_CHAR "+>\\s*"
                                                                                     options:NSRegularExpressionCaseInsensitive
                                                                                       error:NULL];
+    NSRegularExpression *swiftImportPattern = [NSRegularExpression regularExpressionWithPattern:@"(//)?\\s*import\\s*" IMPORT_ALLOW_CHAR "+\\s*"
+                                                                                        options:NSRegularExpressionCaseInsensitive
+                                                                                          error:NULL];
     NSRegularExpression *ifPattern = [NSRegularExpression regularExpressionWithPattern:@"\\s*#\\s*if"
                                                                                     options:NSRegularExpressionCaseInsensitive
                                                                                       error:NULL];
@@ -71,6 +74,13 @@
                 firstImportLine = idx;
             }
         }
+        if (ifdefCount == 0 && [swiftImportPattern firstMatchInString:obj options:0 range:range] != nil) {
+            [bracketsImportLines addObject:[self normalizedImportLine:obj]];
+            [lineIndexSet addIndex:idx];
+            if (firstImportLine < 0) {
+                firstImportLine = idx;
+            }
+        }
     }];
     if (lineIndexSet.count > 0) {
         [invocation.buffer.lines removeObjectsAtIndexes:lineIndexSet];
@@ -84,8 +94,9 @@
         
         [invocation.buffer.lines insertObjects:quoteImportLines
                                      atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(firstImportLine, quoteImportLines.count)]];
-        
-        [invocation.buffer.lines insertObject:@"" atIndex:firstImportLine];
+        if (quoteImportLines.count > 0) {
+            [invocation.buffer.lines insertObject:@"" atIndex:firstImportLine];
+        }
         
         [invocation.buffer.lines insertObjects:bracketsImportLines
                                      atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(firstImportLine, bracketsImportLines.count)]];
