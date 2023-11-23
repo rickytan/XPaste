@@ -35,18 +35,7 @@
 }
 
 - (IBAction)onEnable:(id)sender {
-    NSDictionary *dict = nil;
-    NSAppleScript *script = [[NSAppleScript alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"Preference" withExtension:@"scpt"]
-                                                                   error:&dict];
-    if (dict) {
-        NSLog(@"%@", dict);
-    }
-    
-    [script executeAndReturnError:&dict];
-    
-    if (dict) {
-        NSLog(@"%@", dict);
-    }
+    system("open -b com.apple.systempreferences /System/Library/PreferencePanes/Extensions.prefPane");
 }
 
 - (IBAction)onHelp:(id)sender {
