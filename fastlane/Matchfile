@@ -1,0 +1,18 @@
+git_url("git@github.com:QRCodeSnap/Certificates.git")
+git_branch("main")
+storage_mode("git")
+
+team_id("G2DGKXFDHZ")
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+# app_identifier([
+#   "com.xtension.xpaste",
+#   "com.xtension.xpaste.XPasteExtension",
+#   "com.xtension.xpaste.XSortExtension"
+# ])
+username("xuxiaofei@zju.edu.cn")
+
+# username(ENV["APPLE_ID"]) # Your Apple Developer Portal username
+
+# For all available options run `fastlane match -h`
+# Remove the # in front of the line to enable the option

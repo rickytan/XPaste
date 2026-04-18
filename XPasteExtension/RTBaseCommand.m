@@ -18,7 +18,7 @@
 {
     self = [super init];
     if (self) {
-        self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"cn.rickytan.XPaste.defaults"];
+        self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.xtension.xpaste"];
     }
     return self;
 }

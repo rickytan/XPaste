@@ -658,13 +658,13 @@
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 36X754M3QH;
+				DEVELOPMENT_TEAM = G2DGKXFDHZ;
 				INFOPLIST_FILE = XPaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -677,13 +677,13 @@
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 36X754M3QH;
+				DEVELOPMENT_TEAM = G2DGKXFDHZ;
 				INFOPLIST_FILE = XPaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -695,14 +695,14 @@
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 36X754M3QH;
+				DEVELOPMENT_TEAM = G2DGKXFDHZ;
 				INFOPLIST_FILE = XPasteExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XPasteExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XPasteExtension;
 				PRODUCT_NAME = XPaste;
 				SKIP_INSTALL = YES;
 			};
@@ -715,14 +715,14 @@
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 36X754M3QH;
+				DEVELOPMENT_TEAM = G2DGKXFDHZ;
 				INFOPLIST_FILE = XPasteExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XPasteExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XPasteExtension;
 				PRODUCT_NAME = XPaste;
 				SKIP_INSTALL = YES;
 			};
@@ -736,7 +736,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 36X754M3QH;
+				DEVELOPMENT_TEAM = G2DGKXFDHZ;
 				INFOPLIST_FILE = XSortExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = XSort;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 XcoderTips. All rights reserved.";
@@ -745,8 +745,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XSortExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XSortExtension;
 				PRODUCT_NAME = XSort;
 				SKIP_INSTALL = YES;
 			};
@@ -760,7 +759,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 36X754M3QH;
+				DEVELOPMENT_TEAM = G2DGKXFDHZ;
 				INFOPLIST_FILE = XSortExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = XSort;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 XcoderTips. All rights reserved.";
@@ -769,8 +768,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.rickytan.XPaste.XSortExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XSortExtension;
 				PRODUCT_NAME = XSort;
 				SKIP_INSTALL = YES;
 			};

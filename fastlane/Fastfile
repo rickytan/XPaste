@@ -1,0 +1,117 @@
+# This file contains the fastlane.tools configuration
+# For more information about fastlane, visit: https://docs.fastlane.tools
+
+default_platform(:mac)
+
+platform :mac do
+  desc "Download certificates and profiles"
+  lane :certificates do
+    match(
+      type: "development",
+      platform: "macos",
+      app_identifier: [
+        "com.xtension.xpaste",
+        "com.xtension.xpaste.XPasteExtension",
+        "com.xtension.xpaste.XSortExtension"
+      ]
+    )
+    match(
+      type: "appstore",
+      platform: "macos",
+      app_identifier: [
+        "com.xtension.xpaste",
+        "com.xtension.xpaste.XPasteExtension",
+        "com.xtension.xpaste.XSortExtension"
+      ]
+    )
+  end
+
+  desc "Build the app (no signing required for local test)"
+  lane :build_local do
+    cocoapods
+
+    scheme = "XPaste"
+    workspace = "XPaste.xcworkspace"
+
+    xcodebuild(
+      scheme: scheme,
+      workspace: workspace,
+      configuration: "Release",
+      build_settings: {
+        "CODE_SIGN_IDENTITY" => "",
+        "CODE_SIGNING_REQUIRED" => "NO"
+      }
+    )
+  end
+
+  desc "Build the app with signing for distribution"
+  lane :build do
+    match(
+      type: "development",
+      platform: "macos",
+      app_identifier: [
+        "com.xtension.xpaste",
+        "com.xtension.xpaste.XPasteExtension",
+        "com.xtension.xpaste.XSortExtension"
+      ]
+    )
+    match(
+      type: "appstore",
+      platform: "macos",
+      app_identifier: [
+        "com.xtension.xpaste",
+        "com.xtension.xpaste.XPasteExtension",
+        "com.xtension.xpaste.XSortExtension"
+      ]
+    )
+
+    cocoapods
+
+    scheme = "XPaste"
+    workspace = "XPaste.xcworkspace"
+
+    gym(
+      scheme: scheme,
+      workspace: workspace,
+      configuration: "Release",
+      output_directory: "build",
+      export_method: "app-store"
+    )
+  end
+
+  desc "Build and notarize the app"
+  lane :beta do
+    build
+
+    notarize(
+      package: "build/XPaste.app",
+      bundle_id: "com.xtension.xpaste",
+      print_log: true,
+      verbose: true
+    )
+  end
+
+  desc "Build, notarize and release to GitHub"
+  lane :release do
+    beta
+
+    # Create zip for distribution
+    sh("cd build && zip -r XPaste.zip XPaste.app")
+
+    # Get version from Info.plist
+    version = get_version_number(
+      xcodeproj: "XPaste.xcodeproj",
+      target: "XPaste"
+    )
+
+    # Upload to GitHub Releases
+    set_github_release(
+      repository_name: "rickytan/XPaste",
+      name: "XPaste #{version}",
+      tag_name: "v#{version}",
+      description: "Release #{version}",
+      upload_assets: ["build/XPaste.zip"],
+      overwrite: true
+    )
+  end
+end
