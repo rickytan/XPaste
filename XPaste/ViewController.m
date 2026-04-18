@@ -20,7 +20,7 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.xtension.xpaste"];
+    self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"G2DGKXFDHZ.com.xtension.xpaste"];
     [self.userDefaults registerDefaults:@{@"UnicodeUpperCase": @YES}];
     [self.userDefaults synchronize];
     

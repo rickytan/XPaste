@@ -18,7 +18,7 @@
 {
     self = [super init];
     if (self) {
-        self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.xtension.xpaste"];
+        self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"G2DGKXFDHZ.com.xtension.xpaste"];
     }
     return self;
 }
