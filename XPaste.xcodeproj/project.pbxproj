@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,7 @@
 		9C329D75216B75000016C867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D74216B75000016C867 /* main.m */; };
 		9C329D83216B752C0016C867 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
 		9C329D87216B752C0016C867 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D86216B752C0016C867 /* SourceEditorExtension.m */; };
-		9C329D8F216B752C0016C867 /* XPaste.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* XPaste.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C329D8F216B752C0016C867 /* XPaste.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* XPaste.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9C329D96216B76650016C867 /* RTBase64Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D95216B76650016C867 /* RTBase64Command.m */; };
 		9C7C2D7321885901003B2E4C /* RTUrlEncodedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C2D7221885900003B2E4C /* RTUrlEncodedCommand.m */; };
 		9CAB93AB27CF4283001E7B34 /* RTSortSelectedLinesCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB93AA27CF4283001E7B34 /* RTSortSelectedLinesCommand.m */; };
@@ -30,7 +30,7 @@
 		9CFB591727C8D92F00B28881 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
 		9CFB591C27C8D92F00B28881 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */; };
 		9CFB591F27C8D92F00B28881 /* RTSortImportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591E27C8D92F00B28881 /* RTSortImportCommand.m */; };
-		9CFB592427C8D92F00B28881 /* XSort.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9CFB591627C8D92F00B28881 /* XSort.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9CFB592427C8D92F00B28881 /* XSort.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CFB591627C8D92F00B28881 /* XSort.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9CFB592827C8DD4100B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9CFB592927C8DD4100B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CFBE251279ECAF300B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
@@ -56,16 +56,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9C329D93216B752C0016C867 /* Embed App Extensions */ = {
+		9C329D93216B752C0016C867 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9C329D8F216B752C0016C867 /* XPaste.appex in Embed App Extensions */,
-				9CFB592427C8D92F00B28881 /* XSort.appex in Embed App Extensions */,
+				9C329D8F216B752C0016C867 /* XPaste.appex in Embed Foundation Extensions */,
+				9CFB592427C8D92F00B28881 /* XSort.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9CFB592A27C8DD4100B28881 /* Embed Frameworks */ = {
@@ -292,7 +292,7 @@
 				9C329D61216B74FF0016C867 /* Sources */,
 				9C329D62216B74FF0016C867 /* Frameworks */,
 				9C329D63216B74FF0016C867 /* Resources */,
-				9C329D93216B752C0016C867 /* Embed App Extensions */,
+				9C329D93216B752C0016C867 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -348,8 +348,9 @@
 		9C329D5D216B74FF0016C867 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = RT;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = XcoderTips;
 				TargetAttributes = {
 					9C329D64216B74FF0016C867 = {
@@ -563,6 +564,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -571,9 +573,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -623,6 +627,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -631,9 +636,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -656,16 +663,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = G2DGKXFDHZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = G2DGKXFDHZ;
 				INFOPLIST_FILE = XPaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match Development com.xtension.xpaste macos";
 			};
 			name = Debug;
 		};
@@ -675,16 +687,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = G2DGKXFDHZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = G2DGKXFDHZ;
 				INFOPLIST_FILE = XPaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match AppStore com.xtension.xpaste macos";
 			};
 			name = Release;
 		};
@@ -693,17 +711,22 @@
 			baseConfigurationReference = 10459028759C0A4A83AAE112 /* Pods-XPasteExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = G2DGKXFDHZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = G2DGKXFDHZ;
 				INFOPLIST_FILE = XPasteExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XPasteExtension;
 				PRODUCT_NAME = XPaste;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match Development com.xtension.xpaste.XPasteExtension macos";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -713,17 +736,23 @@
 			baseConfigurationReference = F62C291D6CD890BEB8FD19EF /* Pods-XPasteExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = G2DGKXFDHZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = G2DGKXFDHZ;
 				INFOPLIST_FILE = XPasteExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XPasteExtension;
 				PRODUCT_NAME = XPaste;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match AppStore com.xtension.xpaste.XPasteExtension macos";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -733,10 +762,12 @@
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_ENTITLEMENTS = XSortExtension/XSortExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G2DGKXFDHZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = G2DGKXFDHZ;
 				INFOPLIST_FILE = XSortExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = XSort;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 XcoderTips. All rights reserved.";
@@ -745,8 +776,11 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XSortExtension;
 				PRODUCT_NAME = XSort;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match Development com.xtension.xpaste.XSortExtension macos";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -756,10 +790,13 @@
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_ENTITLEMENTS = XSortExtension/XSortExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G2DGKXFDHZ;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = G2DGKXFDHZ;
 				INFOPLIST_FILE = XSortExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = XSort;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 XcoderTips. All rights reserved.";
@@ -768,8 +805,11 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XSortExtension;
 				PRODUCT_NAME = XSort;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match AppStore com.xtension.xpaste.XSortExtension macos";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
