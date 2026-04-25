@@ -11,11 +11,8 @@
 		9C0B0BC1216C7A11001650F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BC0216C7A11001650F9 /* Foundation.framework */; };
 		9C20DFCE218C7BAC004F9944 /* RTJSONCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C20DFCD218C7BAC004F9944 /* RTJSONCommand.m */; };
 		9C20DFD7218C7E99004F9944 /* RTObjCLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C20DFD6218C7E99004F9944 /* RTObjCLiteral.m */; };
-		9C329D6A216B74FF0016C867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D69216B74FF0016C867 /* AppDelegate.m */; };
-		9C329D6D216B74FF0016C867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D6C216B74FF0016C867 /* ViewController.m */; };
 		9C329D6F216B75000016C867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C329D6E216B75000016C867 /* Assets.xcassets */; };
 		9C329D72216B75000016C867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C329D70216B75000016C867 /* Main.storyboard */; };
-		9C329D75216B75000016C867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D74216B75000016C867 /* main.m */; };
 		9C329D83216B752C0016C867 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
 		9C329D87216B752C0016C867 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D86216B752C0016C867 /* SourceEditorExtension.m */; };
 		9C329D8F216B752C0016C867 /* XPaste.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* XPaste.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -35,6 +32,8 @@
 		9CFB592927C8DD4100B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CFBE251279ECAF300B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9CFBE252279ECAF300B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9B50A4731BF425613F6F9E3 /* XcodePasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98431EC567AE70ADD5C79EC8 /* XcodePasteApp.swift */; };
+		C87042C0FDDDBFC081323B0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE8D7CDF91B0332FCB28C1 /* ContentView.swift */; };
 		D1AB5BC5263ECCF2D5FC56A6 /* libPods-XPasteExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48764265491CC811647D063C /* libPods-XPasteExtension.a */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +96,9 @@
 		10459028759C0A4A83AAE112 /* Pods-XPasteExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPasteExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPasteExtension/Pods-XPasteExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		48764265491CC811647D063C /* libPods-XPasteExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPasteExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627B308E895F385C20911A02 /* libPods-XPaste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPaste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CE8D7CDF91B0332FCB28C1 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		817645E5962239AA5BEF562A /* Pods-XPaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPaste/Pods-XPaste.release.xcconfig"; sourceTree = "<group>"; };
+		98431EC567AE70ADD5C79EC8 /* XcodePasteApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = XcodePasteApp.swift; sourceTree = "<group>"; };
 		9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		9C0B0BC0216C7A11001650F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C20DFCC218C7BAC004F9944 /* RTJSONCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTJSONCommand.h; sourceTree = "<group>"; };
@@ -106,13 +107,10 @@
 		9C20DFD6218C7E99004F9944 /* RTObjCLiteral.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTObjCLiteral.m; sourceTree = "<group>"; };
 		9C329D65216B74FF0016C867 /* XPaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C329D68216B74FF0016C867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9C329D69216B74FF0016C867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C329D6B216B74FF0016C867 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9C329D6C216B74FF0016C867 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9C329D6E216B75000016C867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C329D71216B75000016C867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C329D73216B75000016C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C329D74216B75000016C867 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C329D76216B75000016C867 /* XPaste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPaste.entitlements; sourceTree = "<group>"; };
 		9C329D80216B752C0016C867 /* XPaste.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XPaste.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C329D82216B752C0016C867 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -203,15 +201,14 @@
 			isa = PBXGroup;
 			children = (
 				9C329D68216B74FF0016C867 /* AppDelegate.h */,
-				9C329D69216B74FF0016C867 /* AppDelegate.m */,
 				9C329D6E216B75000016C867 /* Assets.xcassets */,
 				9C329D73216B75000016C867 /* Info.plist */,
-				9C329D74216B75000016C867 /* main.m */,
 				9C329D70216B75000016C867 /* Main.storyboard */,
 				9CE0C367216D9D5300548233 /* Preference.scpt */,
 				9C329D6B216B74FF0016C867 /* ViewController.h */,
-				9C329D6C216B74FF0016C867 /* ViewController.m */,
 				9C329D76216B75000016C867 /* XPaste.entitlements */,
+				65CE8D7CDF91B0332FCB28C1 /* ContentView.swift */,
+				98431EC567AE70ADD5C79EC8 /* XcodePasteApp.swift */,
 			);
 			path = XPaste;
 			sourceTree = "<group>";
@@ -479,9 +476,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C329D6D216B74FF0016C867 /* ViewController.m in Sources */,
-				9C329D75216B75000016C867 /* main.m in Sources */,
-				9C329D6A216B74FF0016C867 /* AppDelegate.m in Sources */,
+				C87042C0FDDDBFC081323B0E /* ContentView.swift in Sources */,
+				A9B50A4731BF425613F6F9E3 /* XcodePasteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +676,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match Development com.xtension.xpaste macos";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "XcodePaste-Swift.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -706,6 +704,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match AppStore com.xtension.xpaste macos";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "XcodePaste-Swift.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
