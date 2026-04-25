@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         if let window = NSApplication.shared.windows.first {
-            window.setContentSize(NSSize(width: 400, height: 270))
+            window.setContentSize(NSSize(width: 400, height: 360))
             window.styleMask.remove(.resizable)
             window.center()
         }

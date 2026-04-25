@@ -105,8 +105,6 @@
 		9C20DFD2218C7E13004F9944 /* RTObjCLiteral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTObjCLiteral.h; sourceTree = "<group>"; };
 		9C20DFD6218C7E99004F9944 /* RTObjCLiteral.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTObjCLiteral.m; sourceTree = "<group>"; };
 		9C329D65216B74FF0016C867 /* XPaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C329D68216B74FF0016C867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9C329D6B216B74FF0016C867 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9C329D6E216B75000016C867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C329D73216B75000016C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C329D76216B75000016C867 /* XPaste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPaste.entitlements; sourceTree = "<group>"; };
@@ -198,11 +196,9 @@
 		9C329D67216B74FF0016C867 /* XPaste */ = {
 			isa = PBXGroup;
 			children = (
-				9C329D68216B74FF0016C867 /* AppDelegate.h */,
 				9C329D6E216B75000016C867 /* Assets.xcassets */,
 				9C329D73216B75000016C867 /* Info.plist */,
 				9CE0C367216D9D5300548233 /* Preference.scpt */,
-				9C329D6B216B74FF0016C867 /* ViewController.h */,
 				9C329D76216B75000016C867 /* XPaste.entitlements */,
 				65CE8D7CDF91B0332FCB28C1 /* ContentView.swift */,
 				98431EC567AE70ADD5C79EC8 /* XcodePasteApp.swift */,
@@ -517,7 +513,6 @@
 			targetProxy = 9CFB592227C8D92F00B28881 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
 
 /* Begin XCBuildConfiguration section */
 		9C329D77216B75000016C867 /* Debug */ = {

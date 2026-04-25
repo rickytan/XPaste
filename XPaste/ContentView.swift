@@ -29,6 +29,7 @@ struct ContentView: View {
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
+                .fixedSize(horizontal: false, vertical: true)
 
             Spacer()
 
@@ -61,7 +62,7 @@ struct ContentView: View {
                 .foregroundColor(.secondary)
         }
         .padding(20)
-        .frame(width: 400, height: 270)
+        .frame(width: 400, height: 360)
     }
 }
 
