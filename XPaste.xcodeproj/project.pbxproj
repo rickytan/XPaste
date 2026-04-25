@@ -12,7 +12,6 @@
 		9C20DFCE218C7BAC004F9944 /* RTJSONCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C20DFCD218C7BAC004F9944 /* RTJSONCommand.m */; };
 		9C20DFD7218C7E99004F9944 /* RTObjCLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C20DFD6218C7E99004F9944 /* RTObjCLiteral.m */; };
 		9C329D6F216B75000016C867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C329D6E216B75000016C867 /* Assets.xcassets */; };
-		9C329D72216B75000016C867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C329D70216B75000016C867 /* Main.storyboard */; };
 		9C329D83216B752C0016C867 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
 		9C329D87216B752C0016C867 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D86216B752C0016C867 /* SourceEditorExtension.m */; };
 		9C329D8F216B752C0016C867 /* XPaste.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* XPaste.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -109,7 +108,6 @@
 		9C329D68216B74FF0016C867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C329D6B216B74FF0016C867 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9C329D6E216B75000016C867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9C329D71216B75000016C867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C329D73216B75000016C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C329D76216B75000016C867 /* XPaste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPaste.entitlements; sourceTree = "<group>"; };
 		9C329D80216B752C0016C867 /* XPaste.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XPaste.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,7 +201,6 @@
 				9C329D68216B74FF0016C867 /* AppDelegate.h */,
 				9C329D6E216B75000016C867 /* Assets.xcassets */,
 				9C329D73216B75000016C867 /* Info.plist */,
-				9C329D70216B75000016C867 /* Main.storyboard */,
 				9CE0C367216D9D5300548233 /* Preference.scpt */,
 				9C329D6B216B74FF0016C867 /* ViewController.h */,
 				9C329D76216B75000016C867 /* XPaste.entitlements */,
@@ -404,7 +401,6 @@
 			files = (
 				9C329D6F216B75000016C867 /* Assets.xcassets in Resources */,
 				9CE0C368216D9D5300548233 /* Preference.scpt in Resources */,
-				9C329D72216B75000016C867 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,16 +518,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		9C329D70216B75000016C867 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C329D71216B75000016C867 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9C329D77216B75000016C867 /* Debug */ = {

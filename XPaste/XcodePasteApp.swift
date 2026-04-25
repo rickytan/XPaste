@@ -24,10 +24,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
-    func applicationWillFinishLaunching(_ notification: Notification) {
-        // Set window size before it appears
+    func applicationDidFinishLaunching(_ notification: Notification) {
         if let window = NSApplication.shared.windows.first {
-            window.setContentSize(NSSize(width: 400, height: 300))
+            window.setContentSize(NSSize(width: 400, height: 270))
+            window.styleMask.remove(.resizable)
             window.center()
         }
     }

@@ -13,8 +13,10 @@ struct ContentView: View {
 
             // Enable Button
             Button(action: {
-                let url = URL(string: "x-apple.systempreferences:com.apple.preference.extensions")
-                NSWorkspace.shared.open(url!)
+                let task = Process()
+                task.launchPath = "/usr/bin/open"
+                task.arguments = ["-b", "com.apple.systempreferences", "/System/Library/PreferencePanes/Extensions.prefPane"]
+                try? task.run()
             }) {
                 Text("Enable XcodePaste")
                     .font(.headline)
@@ -59,7 +61,7 @@ struct ContentView: View {
                 .foregroundColor(.secondary)
         }
         .padding(20)
-        .frame(width: 400, height: 300)
+        .frame(width: 400, height: 270)
     }
 }
 
