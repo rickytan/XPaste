@@ -1,0 +1,467 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "M6C0z",
+      "x": 0,
+      "y": 0,
+      "name": "bg",
+      "width": 5120,
+      "height": 3320,
+      "fill": "#0f172a",
+      "layout": "vertical",
+      "gap": 80,
+      "padding": [
+        70,
+        120
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "LXzbU",
+          "name": "title",
+          "fill": "#38bdf8",
+          "content": "XcodePaste",
+          "fontFamily": "Inter",
+          "fontSize": 180,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "DuISD",
+          "name": "sub",
+          "fill": "#94a3b8",
+          "content": "Power Up Your Xcode Paste",
+          "fontFamily": "Inter",
+          "fontSize": 72,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "ZFfLD",
+          "name": "grid",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 60,
+          "children": [
+            {
+              "type": "frame",
+              "id": "QnoUZ",
+              "name": "row1",
+              "width": "fill_container",
+              "gap": 60,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ryntp",
+                  "name": "c1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 860,
+                  "fill": "#1e293b",
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    60,
+                    70
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ioMjn",
+                      "name": "c1t",
+                      "fill": "#38bdf8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "BASE64",
+                      "fontFamily": "Inter",
+                      "fontSize": 54,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Pi2PF",
+                      "name": "c1b",
+                      "fill": "#e2e8f0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A short text.中文。",
+                      "fontFamily": "Inter",
+                      "fontSize": 45,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aRa6c",
+                      "name": "c1d",
+                      "fill": "#475569",
+                      "content": "↓",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dmT0Y",
+                      "name": "c1a",
+                      "fill": "#fbbf24",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "NSString *text = @\"QSBzaG9ydCB0ZXh0LuS4reaWh+OAgg==\";",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sdy1h",
+                  "name": "c2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 860,
+                  "fill": "#1e293b",
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    60,
+                    70
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2KTfC",
+                      "name": "c2t",
+                      "fill": "#38bdf8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "STRING LITERAL",
+                      "fontFamily": "Inter",
+                      "fontSize": 54,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gUUEM",
+                      "name": "c2b",
+                      "fill": "#e2e8f0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "<div class=\"card\">\n  <img src=\"...\" />\n  <div class=\"card-body\">\n    <h5>Card</h5>\n  </div>\n</div>",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CFzrh",
+                      "name": "c2d",
+                      "fill": "#475569",
+                      "content": "↓",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iRTdj",
+                      "name": "c2a",
+                      "fill": "#fbbf24",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "NSString *html = @\"<div class=\\\"card\\\">\\n  <img src=\\\"...\\\" />\\n  <div class=\\\"card-body\\\">\\n    <h5>Card</h5>\\n  </div>\\n</div>\";",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G8XlK",
+                  "name": "c3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 860,
+                  "fill": "#1e293b",
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    60,
+                    70
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Oi9VK",
+                      "name": "c3t",
+                      "fill": "#38bdf8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "UNICODE",
+                      "fontFamily": "Inter",
+                      "fontSize": 54,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GQBVz",
+                      "name": "c3b",
+                      "fill": "#e2e8f0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A short text.中文。😂🤣",
+                      "fontFamily": "Inter",
+                      "fontSize": 45,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "2y4ua",
+                      "name": "c3d",
+                      "fill": "#475569",
+                      "content": "↓",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RofhI",
+                      "name": "c3a",
+                      "fill": "#fbbf24",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "@\"A short text.\\u4e2d\\u6587\\u3002\\U0001f602\\U0001f923\";",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iJ0nZ",
+              "name": "row2",
+              "width": "fill_container",
+              "gap": 60,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "geSzg",
+                  "name": "c4",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 860,
+                  "fill": "#1e293b",
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    60,
+                    70
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WOGvI",
+                      "name": "c4t",
+                      "fill": "#38bdf8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "URL ENCODED",
+                      "fontFamily": "Inter",
+                      "fontSize": 54,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "1SnKn",
+                      "name": "c4b",
+                      "fill": "#e2e8f0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "http://host.com/中文路径?key=中文&name=中文#/path/中文",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "plGjA",
+                      "name": "c4d",
+                      "fill": "#475569",
+                      "content": "↓",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xNQNt",
+                      "name": "c4a",
+                      "fill": "#fbbf24",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "@\"http://host.com/%E4%B8%AD%E6%96%87%E8%B7%AF%E5%BE%84?key=%E4%B8%AD%E6%96%87\";",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CRjCi",
+                  "name": "c5",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 860,
+                  "fill": "#1e293b",
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    60,
+                    70
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xQv0H",
+                      "name": "c5t",
+                      "fill": "#38bdf8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "JSON → ObjC",
+                      "fontFamily": "Inter",
+                      "fontSize": 54,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XlJi0",
+                      "name": "c5b",
+                      "fill": "#e2e8f0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "{\n  \"name\": \"John\",\n  \"age\": 30,\n  \"cars\": [\"Ford\", \"BMW\"]\n}",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VmDh6",
+                      "name": "c5d",
+                      "fill": "#475569",
+                      "content": "↓",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WciBD",
+                      "name": "c5a",
+                      "fill": "#fbbf24",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "@{@\"name\": @\"John\", @\"age\": @30,\n  @\"cars\": @[@\"Ford\", @\"BMW\"]};",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AFYpT",
+                  "name": "c6",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 860,
+                  "fill": "#1e293b",
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    60,
+                    70
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8hNMS",
+                      "name": "c6t",
+                      "fill": "#38bdf8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "SORT IMPORTS",
+                      "fontFamily": "Inter",
+                      "fontSize": 54,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3aNQq",
+                      "name": "c6b",
+                      "fill": "#f87171",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "#import \"UIBarButtonItem+NKBarButton.h\"\n#import <NKCoreNetwork/NKCoreNetwork.h>\n#import \"NKWebViewController.h\"",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Wlzq0",
+                      "name": "c6d",
+                      "fill": "#475569",
+                      "content": "↓",
+                      "fontFamily": "Inter",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oK4F6",
+                      "name": "c6a",
+                      "fill": "#4ade80",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "#import <NEIocProtocols/NEIocProtocols.h>\n#import <NKCoreNetwork/NKCoreNetwork.h>\n\n#import \"NKWebViewController.h\"",
+                      "fontFamily": "Inter",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "rpYAp",
+          "name": "foot",
+          "fill": "#64748b",
+          "content": "Available in Xcode Editor menu  •  macOS 10.13+",
+          "fontFamily": "Inter",
+          "fontSize": 72,
+          "fontWeight": "normal"
+        }
+      ]
+    }
+  ]
+}
