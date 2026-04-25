@@ -35,7 +35,9 @@
 }
 
 - (IBAction)onEnable:(id)sender {
-    system("open -b com.apple.systempreferences /System/Library/PreferencePanes/Extensions.prefPane");
+    // Modern macOS System Settings URL scheme for Extensions
+    NSURL *url = [NSURL URLWithString:@"x-apple.systempreferences:com.apple.Extensions"];
+    [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
 - (IBAction)onHelp:(id)sender {
