@@ -28,6 +28,8 @@
 	<string>Open Extension Settings Panel</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2026年 XcoderTips. All rights reserved.</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
