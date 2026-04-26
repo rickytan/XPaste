@@ -659,6 +659,7 @@
 		};
 		9C329D7A216B75000016C867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9252680C34969B24418D0F /* Pods-XPaste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
@@ -686,6 +687,7 @@
 		};
 		9C329D7B216B75000016C867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817645E5962239AA5BEF562A /* Pods-XPaste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XPaste/XPaste.entitlements;
@@ -713,6 +715,7 @@
 		};
 		9C329D91216B752C0016C867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10459028759C0A4A83AAE112 /* Pods-XPasteExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -739,6 +742,7 @@
 		};
 		9C329D92216B752C0016C867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62C291D6CD890BEB8FD19EF /* Pods-XPasteExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = XPasteExtension/XPasteExtension.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Distribution";

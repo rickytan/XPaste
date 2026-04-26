@@ -44,13 +44,13 @@ struct ContentView: View {
                 .buttonStyle(.plain)
 
                 Button("Privacy") {
-                    NSWorkspace.shared.open(URL(string: "https://github.com/rickytan/XPaste/blob/master/PRIVACY.md")!)
+                    NSWorkspace.shared.open(URL(string: "https://xcodepaste.github.io/privacy.html")!)
                 }
                 .font(.caption)
                 .foregroundColor(.blue)
 
                 Button("EULA") {
-                    NSWorkspace.shared.open(URL(string: "https://github.com/rickytan/XPaste/blob/master/EULA.md")!)
+                    NSWorkspace.shared.open(URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
                 }
                 .font(.caption)
                 .foregroundColor(.blue)
