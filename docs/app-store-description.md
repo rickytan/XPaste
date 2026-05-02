@@ -1,16 +1,16 @@
-# XcodePaste App Store Description (English)
+# XCPaste App Store Description (English)
 
 ## App Name
-XcodePaste - Xcode Source Editor Extension
+XCPaste - Source Editor Extension
 
 ## Subtitle (30 chars max)
 Power Up Your Paste
 
 ## Description
 
-**Boost your Xcode productivity with XcodePaste!**
+**Boost your IDE productivity with XCPaste!**
 
-XcodePaste is a powerful Xcode Source Editor Extension that transforms how you paste text into your code. Save time and write cleaner code with these essential features:
+XCPaste is a powerful Source Editor Extension that transforms how you paste text into your code. Save time and write cleaner code with these essential features:
 
 ### Features
 
@@ -35,13 +35,13 @@ Automatically organize your import statements. Group framework imports (`<>`) an
 ---
 
 **Installation:**
-1. Open XcodePaste.app
-2. Click "Enable XcodePaste"
-3. Ensure "XcodePaste Xcode Source Editor" is checked in System Extensions
-4. Relaunch Xcode — find XcodePaste in the Editor menu
+1. Open XCPaste.app
+2. Click "Enable XCPaste"
+3. Ensure "XCPaste Source Editor" is checked in System Extensions
+4. Relaunch your IDE — find XCPaste in the Editor menu
 
 **Customize keyboard shortcuts:**
-Open Xcode Preferences → Key Bindings → search "xcodepaste" → assign your favorite shortcuts.
+Open Preferences → Key Bindings → search "xcpaste" → assign your favorite shortcuts.
 
 ---
 
@@ -61,11 +61,11 @@ xcode, paste, base64, unicode, string literal, json, imports, developer tools, p
 2. String literal conversion demo
 3. Unicode conversion demo
 4. Import sorting before/after
-5. Xcode menu showing XcodePaste commands
+5. Editor menu showing XCPaste commands
 
 ## What's New (for updates)
 - Added Swift import sorting support
-- Updated for latest Xcode compatibility
+- Updated for latest IDE compatibility
 - Improved Unicode character handling
 - Performance optimizations
 
@@ -76,4 +76,4 @@ Developer Tools
 4+ (No objectionable content)
 
 ## Privacy
-No data collection. XcodePaste runs entirely locally and does not access, store, or transmit any user data.
+No data collection. XCPaste runs entirely locally and does not access, store, or transmit any user data.

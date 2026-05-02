@@ -1,14 +1,14 @@
-# End User License Agreement (EULA) for XcodePaste
+# End User License Agreement (EULA) for XCPaste
 
 **Version: 1.4 | Last Updated: April 2026**
 
 ## 1. Agreement
 
-By downloading, installing, or using XcodePaste ("the App"), you agree to be bound by this End User License Agreement ("EULA"). If you do not agree, do not use the App.
+By downloading, installing, or using XCPaste ("the App"), you agree to be bound by this End User License Agreement ("EULA"). If you do not agree, do not use the App.
 
 ## 2. License Grant
 
-XcodePaste is provided free of charge. The developer ("Licensor") grants you a non-exclusive, non-transferable license to:
+XCPaste is provided free of charge. The developer ("Licensor") grants you a non-exclusive, non-transferable license to:
 - Use the App on your personal macOS devices
 - Use the App for both personal and commercial development work
 
@@ -22,7 +22,7 @@ You may NOT:
 
 ## 4. Ownership
 
-XcodePaste and all its components remain the property of the Licensor. This EULA does not transfer any ownership rights.
+XCPaste and all its components remain the property of the Licensor. This EULA does not transfer any ownership rights.
 
 ## 5. Disclaimer of Warranty
 
@@ -64,4 +64,4 @@ For questions about this EULA:
 
 ---
 
-**By using XcodePaste, you acknowledge that you have read and agree to this EULA.**
+**By using XCPaste, you acknowledge that you have read and agree to this EULA.**

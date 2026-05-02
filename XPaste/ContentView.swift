@@ -18,13 +18,13 @@ struct ContentView: View {
                 task.arguments = ["-b", "com.apple.systempreferences", "/System/Library/PreferencePanes/Extensions.prefPane"]
                 try? task.run()
             }) {
-                Text("Enable XcodePaste")
+                Text("Enable XCPaste")
                     .font(.headline)
             }
             .frame(width: 200, height: 40)
 
             // Description
-            Text("Enable XcodePaste in System Settings → Extensions to use it in Xcode")
+            Text("Enable XCPaste in System Settings → Extensions to use it in Xcode")
                 .font(.caption)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)

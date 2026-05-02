@@ -31,7 +31,7 @@
 		9CFB592927C8DD4100B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CFBE251279ECAF300B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9CFBE252279ECAF300B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A9B50A4731BF425613F6F9E3 /* XcodePasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98431EC567AE70ADD5C79EC8 /* XcodePasteApp.swift */; };
+		A9B50A4731BF425613F6F9E3 /* XCPasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98431EC567AE70ADD5C79EC8 /* XCPasteApp.swift */; };
 		C87042C0FDDDBFC081323B0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE8D7CDF91B0332FCB28C1 /* ContentView.swift */; };
 		D1AB5BC5263ECCF2D5FC56A6 /* libPods-XPasteExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48764265491CC811647D063C /* libPods-XPasteExtension.a */; };
 /* End PBXBuildFile section */
@@ -99,7 +99,7 @@
 		627B308E895F385C20911A02 /* libPods-XPaste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPaste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CE8D7CDF91B0332FCB28C1 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		817645E5962239AA5BEF562A /* Pods-XPaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPaste/Pods-XPaste.release.xcconfig"; sourceTree = "<group>"; };
-		98431EC567AE70ADD5C79EC8 /* XcodePasteApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = XcodePasteApp.swift; sourceTree = "<group>"; };
+		98431EC567AE70ADD5C79EC8 /* XCPasteApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = XCPasteApp.swift; sourceTree = "<group>"; };
 		9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		9C0B0BC0216C7A11001650F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C20DFCC218C7BAC004F9944 /* RTJSONCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTJSONCommand.h; sourceTree = "<group>"; };
@@ -205,7 +205,7 @@
 				9CE0C367216D9D5300548233 /* Preference.scpt */,
 				9C329D76216B75000016C867 /* XPaste.entitlements */,
 				65CE8D7CDF91B0332FCB28C1 /* ContentView.swift */,
-				98431EC567AE70ADD5C79EC8 /* XcodePasteApp.swift */,
+				98431EC567AE70ADD5C79EC8 /* XCPasteApp.swift */,
 			);
 			path = XPaste;
 			sourceTree = "<group>";
@@ -494,7 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C87042C0FDDDBFC081323B0E /* ContentView.swift in Sources */,
-				A9B50A4731BF425613F6F9E3 /* XcodePasteApp.swift in Sources */,
+				A9B50A4731BF425613F6F9E3 /* XCPasteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
