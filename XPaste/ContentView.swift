@@ -44,7 +44,7 @@ struct ContentView: View {
                 .buttonStyle(.plain)
 
                 Button("Privacy") {
-                    NSWorkspace.shared.open(URL(string: "https://xcodepaste.github.io/privacy.html")!)
+                    NSWorkspace.shared.open(URL(string: "https://xcpaste.github.io/privacy.html")!)
                 }
                 .font(.caption)
                 .foregroundColor(.blue)

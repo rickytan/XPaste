@@ -93,9 +93,7 @@
 /* Begin PBXFileReference section */
 		0B9252680C34969B24418D0F /* Pods-XPaste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPaste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPaste/Pods-XPaste.debug.xcconfig"; sourceTree = "<group>"; };
 		10459028759C0A4A83AAE112 /* Pods-XPasteExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPasteExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPasteExtension/Pods-XPasteExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		3B4EB678346F16445DE991DF /* BuildVersion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BuildVersion.xcconfig; sourceTree = "<group>"; };
 		48764265491CC811647D063C /* libPods-XPasteExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPasteExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B1993D612183EE2B018126E /* BuildVersion.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = BuildVersion.plist; sourceTree = "<group>"; };
 		627B308E895F385C20911A02 /* libPods-XPaste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPaste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CE8D7CDF91B0332FCB28C1 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		817645E5962239AA5BEF562A /* Pods-XPaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPaste/Pods-XPaste.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,8 +180,6 @@
 				9C329D81216B752C0016C867 /* Frameworks */,
 				9C329D66216B74FF0016C867 /* Products */,
 				B278BDCE276D1CCF31DFFB0B /* Pods */,
-				4B1993D612183EE2B018126E /* BuildVersion.plist */,
-				3B4EB678346F16445DE991DF /* BuildVersion.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -483,7 +479,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Read current version\nversion=$(plutil -extract CFBundleVersion raw XPaste/Info.plist)\nnew_version=$((version + 1))\n# Update all Info.plists\nplutil -replace CFBundleVersion -string \"$new_version\" XPaste/Info.plist\nplutil -replace CFBundleVersion -string \"$new_version\" XPasteExtension/Info.plist\nplutil -replace CFBundleVersion -string \"$new_version\" XSortExtension/Info.plist\necho \"Build version: $new_version\"";
+			shellScript = "# Read current version\nversion=$(plutil -extract CFBundleVersion raw XPaste/Info.plist)\nnew_version=$((version + 1))\n# Update all Info.plists\nplutil -replace CFBundleVersion -string \"$new_version\" XPaste/Info.plist\nplutil -replace CFBundleVersion -string \"$new_version\" XPasteExtension/Info.plist\nplutil -replace CFBundleVersion -string \"$new_version\" XSortExtension/Info.plist\necho \"Build version: $new_version\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
