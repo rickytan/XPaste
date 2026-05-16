@@ -1,16 +1,16 @@
-# Privacy Policy for XCPaste
+# Privacy Policy for PowerPaste
 
 **Last Updated: April 2026**
 
 ## Introduction
 
-XCPaste ("we", "our", or "the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our macOS application.
+PowerPaste ("we", "our", or "the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our macOS application.
 
 ## Data Collection
 
 **We do not collect any personal data.**
 
-XCPaste operates entirely locally on your Mac. We do not:
+PowerPaste operates entirely locally on your Mac. We do not:
 - Collect personal information
 - Store data on external servers
 - Transmit any data over the internet
@@ -19,7 +19,7 @@ XCPaste operates entirely locally on your Mac. We do not:
 
 ## How the App Works
 
-XCPaste is a Source Editor Extension for Apple's IDE that:
+PowerPaste is a Source Editor Extension for Apple's IDE that:
 - Transforms text you copy (Base64, Unicode, URL encoding, etc.)
 - Converts JSON to Objective-C literals
 - Sorts import statements
@@ -49,4 +49,4 @@ We may update this Privacy Policy occasionally. Changes will be posted on our Gi
 
 ---
 
-**XCPaste - Your data stays on your Mac.**
+**PowerPaste - Your data stays on your Mac.**

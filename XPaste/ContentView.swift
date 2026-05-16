@@ -18,13 +18,13 @@ struct ContentView: View {
                 task.arguments = ["-b", "com.apple.systempreferences", "/System/Library/PreferencePanes/Extensions.prefPane"]
                 try? task.run()
             }) {
-                Text("Enable XCPaste")
+                Text("Enable PowerPaste")
                     .font(.headline)
             }
             .frame(width: 200, height: 40)
 
             // Description
-            Text("Enable XCPaste in System Settings → Extensions to use it in Xcode")
+            Text("Enable PowerPaste in System Settings → Extensions to use it in your IDE")
                 .font(.caption)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
@@ -44,7 +44,7 @@ struct ContentView: View {
                 .buttonStyle(.plain)
 
                 Button("Privacy") {
-                    NSWorkspace.shared.open(URL(string: "https://xcpaste.github.io/privacy.html")!)
+                    NSWorkspace.shared.open(URL(string: "https://pasteext.github.io/privacy.html")!)
                 }
                 .font(.caption)
                 .foregroundColor(.blue)

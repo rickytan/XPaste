@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct XCPasteApp: App {
+struct PowerPasteApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
@@ -11,7 +11,7 @@ struct XCPasteApp: App {
         .windowStyle(.hiddenTitleBar)
         .commands {
             CommandGroup(replacing: .appInfo) {
-                Button("About XCPaste") {
+                Button("About PowerPaste") {
                     NSApplication.shared.orderFrontStandardAboutPanel(nil)
                 }
             }

@@ -1,5 +1,5 @@
 {
-  "version": "2.10",
+  "version": "2.11",
   "children": [
     {
       "type": "frame",
@@ -24,7 +24,7 @@
           "id": "LXzbU",
           "name": "title",
           "fill": "#38bdf8",
-          "content": "XcodePaste",
+          "content": "PowerPaste",
           "fontFamily": "Inter",
           "fontSize": 180,
           "fontWeight": "bold"
@@ -34,7 +34,7 @@
           "id": "DuISD",
           "name": "sub",
           "fill": "#94a3b8",
-          "content": "Power Up Your Xcode Paste",
+          "content": "Power Up Your Paste",
           "fontFamily": "Inter",
           "fontSize": 72,
           "fontWeight": "normal"

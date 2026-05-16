@@ -1,16 +1,16 @@
-# XCPaste App Store Description (English)
+# PowerPaste App Store Description (English)
 
 ## App Name
-XCPaste - Source Editor Extension
+PowerPaste - Source Editor Extension
 
 ## Subtitle (30 chars max)
 Power Up Your Paste
 
 ## Description
 
-**Boost your IDE productivity with XCPaste!**
+**Boost your IDE productivity with PowerPaste!**
 
-XCPaste is a powerful Source Editor Extension that transforms how you paste text into your code. Save time and write cleaner code with these essential features:
+PowerPaste is a powerful Source Editor Extension that transforms how you paste text into your code. Save time and write cleaner code with these essential features:
 
 ### Features
 
@@ -35,13 +35,13 @@ Automatically organize your import statements. Group framework imports (`<>`) an
 ---
 
 **Installation:**
-1. Open XCPaste.app
-2. Click "Enable XCPaste"
-3. Ensure "XCPaste Source Editor" is checked in System Extensions
-4. Relaunch your IDE — find XCPaste in the Editor menu
+1. Open PowerPaste.app
+2. Click "Enable PowerPaste"
+3. Ensure "PowerPaste Source Editor" is checked in System Extensions
+4. Relaunch your IDE — find PowerPaste in the Editor menu
 
 **Customize keyboard shortcuts:**
-Open Preferences → Key Bindings → search "xcpaste" → assign your favorite shortcuts.
+Open Preferences → Key Bindings → search "powerpaste" → assign your favorite shortcuts.
 
 ---
 
@@ -61,7 +61,7 @@ xcode, paste, base64, unicode, string literal, json, imports, developer tools, p
 2. String literal conversion demo
 3. Unicode conversion demo
 4. Import sorting before/after
-5. Editor menu showing XCPaste commands
+5. Editor menu showing PowerPaste commands
 
 ## What's New (for updates)
 - Added Swift import sorting support
@@ -76,4 +76,4 @@ Developer Tools
 4+ (No objectionable content)
 
 ## Privacy
-No data collection. XCPaste runs entirely locally and does not access, store, or transmit any user data.
+No data collection. PowerPaste runs entirely locally and does not access, store, or transmit any user data.
