@@ -15,6 +15,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9CFB591527C8D92F00B28881"
+               BuildableName = "SortExtension.appex"
+               BlueprintName = "SortExtension"
+               ReferencedContainer = "container:XPaste.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C329D64216B74FF0016C867"
                BuildableName = "PowerPaste.app"
                BlueprintName = "PowerPaste"

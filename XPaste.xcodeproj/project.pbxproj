@@ -14,7 +14,7 @@
 		9C329D6F216B75000016C867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C329D6E216B75000016C867 /* Assets.xcassets */; };
 		9C329D83216B752C0016C867 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
 		9C329D87216B752C0016C867 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D86216B752C0016C867 /* SourceEditorExtension.m */; };
-		9C329D8F216B752C0016C867 /* XPaste.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* XPaste.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C329D8F216B752C0016C867 /* PasteExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9C329D80216B752C0016C867 /* PasteExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9C329D96216B76650016C867 /* RTBase64Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C329D95216B76650016C867 /* RTBase64Command.m */; };
 		9C7C2D7321885901003B2E4C /* RTUrlEncodedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C2D7221885900003B2E4C /* RTUrlEncodedCommand.m */; };
 		9CAB93AB27CF4283001E7B34 /* RTSortSelectedLinesCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB93AA27CF4283001E7B34 /* RTSortSelectedLinesCommand.m */; };
@@ -26,7 +26,7 @@
 		9CFB591727C8D92F00B28881 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C329D82216B752C0016C867 /* Cocoa.framework */; };
 		9CFB591C27C8D92F00B28881 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */; };
 		9CFB591F27C8D92F00B28881 /* RTSortImportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB591E27C8D92F00B28881 /* RTSortImportCommand.m */; };
-		9CFB592427C8D92F00B28881 /* XSort.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CFB591627C8D92F00B28881 /* XSort.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9CFB592427C8D92F00B28881 /* SortExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CFB591627C8D92F00B28881 /* SortExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9CFB592827C8DD4100B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
 		9CFB592927C8DD4100B28881 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CFBE251279ECAF300B28881 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0B0BBE216C79FC001650F9 /* XcodeKit.framework */; };
@@ -60,8 +60,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9C329D8F216B752C0016C867 /* XPaste.appex in Embed Foundation Extensions */,
-				9CFB592427C8D92F00B28881 /* XSort.appex in Embed Foundation Extensions */,
+				9C329D8F216B752C0016C867 /* PasteExtension.appex in Embed Foundation Extensions */,
+				9CFB592427C8D92F00B28881 /* SortExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,7 +108,7 @@
 		9C329D6E216B75000016C867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C329D73216B75000016C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C329D76216B75000016C867 /* XPaste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPaste.entitlements; sourceTree = "<group>"; };
-		9C329D80216B752C0016C867 /* XPaste.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XPaste.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C329D80216B752C0016C867 /* PasteExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PasteExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C329D82216B752C0016C867 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9C329D85216B752C0016C867 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
 		9C329D86216B752C0016C867 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		9CE0C364216CC99700548233 /* RTUnicodeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTUnicodeCommand.h; sourceTree = "<group>"; };
 		9CE0C365216CC99700548233 /* RTUnicodeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUnicodeCommand.m; sourceTree = "<group>"; };
 		9CE0C367216D9D5300548233 /* Preference.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Preference.scpt; sourceTree = "<group>"; };
-		9CFB591627C8D92F00B28881 /* XSort.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XSort.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFB591627C8D92F00B28881 /* SortExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SortExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFB591A27C8D92F00B28881 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
 		9CFB591B27C8D92F00B28881 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
 		9CFB591D27C8D92F00B28881 /* RTSortImportCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSortImportCommand.h; sourceTree = "<group>"; };
@@ -187,8 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				9C329D65216B74FF0016C867 /* XPaste.app */,
-				9C329D80216B752C0016C867 /* XPaste.appex */,
-				9CFB591627C8D92F00B28881 /* XSort.appex */,
+				9C329D80216B752C0016C867 /* PasteExtension.appex */,
+				9CFB591627C8D92F00B28881 /* SortExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 /* Begin PBXNativeTarget section */
 		9C329D64216B74FF0016C867 /* XPaste */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C329D79216B75000016C867 /* Build configuration list for PBXNativeTarget "XPaste" */;
+			buildConfigurationList = 9C329D79216B75000016C867 /* Build configuration list for PBXNativeTarget "PowerPaste" */;
 			buildPhases = (
 				E237E20324B72154E3D31A2F /* [CP] Check Pods Manifest.lock */,
 				9C329D61216B74FF0016C867 /* Sources */,
@@ -298,7 +298,7 @@
 		};
 		9C329D7F216B752C0016C867 /* XPasteExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C329D90216B752C0016C867 /* Build configuration list for PBXNativeTarget "XPasteExtension" */;
+			buildConfigurationList = 9C329D90216B752C0016C867 /* Build configuration list for PBXNativeTarget "PasteExtension" */;
 			buildPhases = (
 				6954D49A2A2ECA031FD65D2E /* [CP] Check Pods Manifest.lock */,
 				9C329D7C216B752C0016C867 /* Sources */,
@@ -310,14 +310,14 @@
 			);
 			dependencies = (
 			);
-			name = XPasteExtension;
-			productName = XPasteExtension;
-			productReference = 9C329D80216B752C0016C867 /* XPaste.appex */;
+			name = PasteExtension;
+			productName = PasteExtension;
+			productReference = 9C329D80216B752C0016C867 /* PasteExtension.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 		9CFB591527C8D92F00B28881 /* XSortExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CFB592727C8D92F00B28881 /* Build configuration list for PBXNativeTarget "XSortExtension" */;
+			buildConfigurationList = 9CFB592727C8D92F00B28881 /* Build configuration list for PBXNativeTarget "SortExtension" */;
 			buildPhases = (
 				9CFB591227C8D92F00B28881 /* Sources */,
 				9CFB591327C8D92F00B28881 /* Frameworks */,
@@ -328,9 +328,9 @@
 			);
 			dependencies = (
 			);
-			name = XSortExtension;
-			productName = XSortExtension;
-			productReference = 9CFB591627C8D92F00B28881 /* XSort.appex */;
+			name = SortExtension;
+			productName = SortExtension;
+			productReference = 9CFB591627C8D92F00B28881 /* SortExtension.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -731,7 +731,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XPasteExtension;
-				PRODUCT_NAME = XPaste;
+				PRODUCT_NAME = PasteExtension;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match Development com.xtension.xpaste.XPasteExtension macos";
 				SKIP_INSTALL = YES;
@@ -758,7 +758,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XPasteExtension;
-				PRODUCT_NAME = XPaste;
+				PRODUCT_NAME = PasteExtension;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match AppStore com.xtension.xpaste.XPasteExtension macos";
 				SKIP_INSTALL = YES;
@@ -787,7 +787,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XSortExtension;
-				PRODUCT_NAME = XSort;
+				PRODUCT_NAME = SortExtension;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match Development com.xtension.xpaste.XSortExtension macos";
 				SKIP_INSTALL = YES;
@@ -816,7 +816,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xtension.xpaste.XSortExtension;
-				PRODUCT_NAME = XSort;
+				PRODUCT_NAME = SortExtension;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "match AppStore com.xtension.xpaste.XSortExtension macos";
 				SKIP_INSTALL = YES;
@@ -835,7 +835,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C329D79216B75000016C867 /* Build configuration list for PBXNativeTarget "XPaste" */ = {
+		9C329D79216B75000016C867 /* Build configuration list for PBXNativeTarget "PowerPaste" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C329D7A216B75000016C867 /* Debug */,
@@ -844,7 +844,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C329D90216B752C0016C867 /* Build configuration list for PBXNativeTarget "XPasteExtension" */ = {
+		9C329D90216B752C0016C867 /* Build configuration list for PBXNativeTarget "PasteExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C329D91216B752C0016C867 /* Debug */,
@@ -853,7 +853,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CFB592727C8D92F00B28881 /* Build configuration list for PBXNativeTarget "XSortExtension" */ = {
+		9CFB592727C8D92F00B28881 /* Build configuration list for PBXNativeTarget "SortExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CFB592527C8D92F00B28881 /* Debug */,

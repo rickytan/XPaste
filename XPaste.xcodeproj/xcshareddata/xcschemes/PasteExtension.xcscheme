@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C329D7F216B752C0016C867"
-               BuildableName = "XPaste.appex"
-               BlueprintName = "XPasteExtension"
+               BuildableName = "PasteExtension.appex"
+               BlueprintName = "PasteExtension"
                ReferencedContainer = "container:XPaste.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
