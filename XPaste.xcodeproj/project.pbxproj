@@ -291,9 +291,9 @@
 				9C329D8E216B752C0016C867 /* PBXTargetDependency */,
 				9CFB592327C8D92F00B28881 /* PBXTargetDependency */,
 			);
-			name = XPaste;
-			productName = XPaste;
-			productReference = 9C329D65216B74FF0016C867 /* XPaste.app */;
+			name = PowerPaste;
+			productName = PowerPaste;
+			productReference = 9C329D65216B74FF0016C867 /* PowerPaste.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9C329D7F216B752C0016C867 /* XPasteExtension */ = {

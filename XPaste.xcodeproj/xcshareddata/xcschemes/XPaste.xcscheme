@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C329D64216B74FF0016C867"
-               BuildableName = "XPaste.app"
-               BlueprintName = "XPaste"
+               BuildableName = "PowerPaste.app"
+               BlueprintName = "PowerPaste"
                ReferencedContainer = "container:XPaste.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C329D64216B74FF0016C867"
-            BuildableName = "XPaste.app"
-            BlueprintName = "XPaste"
+            BuildableName = "PowerPaste.app"
+            BlueprintName = "PowerPaste"
             ReferencedContainer = "container:XPaste.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C329D64216B74FF0016C867"
-            BuildableName = "XPaste.app"
-            BlueprintName = "XPaste"
+            BuildableName = "PowerPaste.app"
+            BlueprintName = "PowerPaste"
             ReferencedContainer = "container:XPaste.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
